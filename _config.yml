@@ -1,5 +1,5 @@
 # SITE CONFIGURATION
-baseurl: "/Type-on-Strap"
+baseurl: ""
 url: "https://yunjey0.github.io"
 title: Yunjey Github blog
 description: "A website with blog posts and pages" # used by search engines

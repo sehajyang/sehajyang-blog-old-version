@@ -8,8 +8,6 @@ tags: [aboutme]
 
 ### Yunjey
 
-<br>
-
 ### Skill Set
 
 Language : Java / JavaScript

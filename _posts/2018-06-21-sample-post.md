@@ -2,7 +2,7 @@
 layout: post
 title: About Me
 tags: [Test, Lorem, Ipsum]
-excerpt_separator: <!--more-->
+excerpt_separator: About Me , Skill Set , Learning
 ---
 
 ## About Me

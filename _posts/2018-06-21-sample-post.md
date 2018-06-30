@@ -1,11 +1,10 @@
 ---
 layout: post
 title: About Me
-tags: [Test, Lorem, Ipsum]
-excerpt_separator: About Me , Skill Set , Learning
+tags: [aboutme]
 ---
 
-## About Me
+# About Me
 
 ### Yunjey
 

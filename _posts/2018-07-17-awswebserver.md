@@ -1,4 +1,4 @@
-# 빠르고 쉽 AWS에 Tomcat 구축 및 웹 어플리케이션 배포하기
+# 빠르고 쉽게 AWS에 Tomcat 구축 및 웹 어플리케이션 배포하기
 
 ## 목차
 
@@ -12,3 +12,7 @@
 * 사용하는 프로그램
 
   Sql Developer, Putty, Eclipse, FileZila
+
+
+## RDS 생성 및 세팅
+

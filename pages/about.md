@@ -1,14 +1,62 @@
 ---
 layout: page
-title: About
+title: About Me
 permalink: /about/
 feature-img: "assets/img/pexels/circuit.jpeg"
-tags: [About, Test]
+tags: [aboutme]
 ---
 
-Type on Strap is based on Type Theme, a free and open-source theme for [Jekyll](http://jekyllrb.com/), licensed under the MIT License.
+# About Me
 
-Head over to the [theme's documentation](https://github.io/sylhare/Type-on-Strap) for much more information about Type on Strap or to install this theme on your own Jekyll site.
+## Yunjey
 
-This file is an example of a page in Jekyll, that automatically shows up in the header navigation, you can delete or modify this file freely.
+## Skill Set
+
+Java / JavaScript    
+
+JSP/Servlet / JSON / Jquery / Ajax / JSTL / html5 / CSS3 / Spring /Spring Security     
+
+BootStrap / Mybatis  
+
+ApacheTomcat 
+
+Docker / AWS
+
+MySQL / Oracle
+
+Git / SVN 
+
+Eclipse / Vim / Visual Studio / Maven
+
+
+
+## Learning
+
+Unmanaged languages (C)   
+
+Ubuntu /Kali Linux 
+
+Secure Coding
+
+Reversing engineering     
+
+Penetration testing(Metasploit)   
+
+Computer architecture / Data structure
+
+
+
+## Interesting
+
+Openstack / Docker
+
+
+## Experiences
+
+* 180628 [OpenInfra Days Korea 2018](https://www.openinfradays.kr/)
+
+* 180628 [SmartTech in Korea 2018](http://www.smarttechshow.co.kr/)
+
+* 180708 [개발자의 생존전략 41기](https://onoffmix.com/event/139310)
+
  

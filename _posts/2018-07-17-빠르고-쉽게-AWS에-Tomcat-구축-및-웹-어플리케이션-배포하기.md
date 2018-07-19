@@ -25,7 +25,7 @@
 
 
 
-![aws1](https://github.com/yunjey0/yunjey0.github.io/blob/master/assets/img/awspost/1.JPG)
+![aws1]({{ "/assets/img/awspost/1.JPG"}})
 
 서비스 항목에 들어가면 위와 같은 화면을 볼 수 있는데
 

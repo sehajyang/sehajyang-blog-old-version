@@ -59,7 +59,7 @@ puttygen을 실행합니다.
 
 Load를 선택후 All file로 탐색해 아까 생성한 새로운 키 페어.pem 파일을 선택합니다.  
 
-![aws4]({{ "/assets/img/awspost/4.JPG"}})
+![aws4]({{ "/assets/img/awspost/4.jpg"}})
 
 그 후 Save private key를 선택하고 key.ppk를 저장할 위치 및 이름을 지정합니다.
 
@@ -67,7 +67,7 @@ putty 를 실행합니다.
 
 HostName에 ubuntu@퍼블릭DNS 를 넣어줍시다.
 
-![aws4]({{ "/assets/img/awspost/5.jpg"}})
+![aws4]({{ "/assets/img/awspost/5.JPG"}})
 
 퍼블릭DNS 는 인스턴스에서 볼 수 있습니다
 

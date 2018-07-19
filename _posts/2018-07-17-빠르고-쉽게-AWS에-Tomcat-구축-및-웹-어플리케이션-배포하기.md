@@ -32,7 +32,7 @@
 우리가 이 중 사용할건 컴퓨팅의 EC2 와 RDS 입니다
 EC2에는 Tomcat8을 설치할 것이고, RDS에는 oracle를 구성할 것 입니다.
 
-![aws2](https://github.com/yunjey0/yunjey0.github.io/blob/master/assets/img/awspost/2.JPG)
+![aws2](https://github.com/yunjey0/yunjey0.github.io/blob/master/assets/img/awspost/2.jpg)
 
 
 
@@ -59,7 +59,7 @@ puttygen을 실행합니다.
 
 Load를 선택후 All file로 탐색해 아까 생성한 새로운 키 페어.pem 파일을 선택합니다.  
 
-![aws4](https://github.com/yunjey0/yunjey0.github.io/blob/master/assets/img/awspost/4.JPG)
+![aws4](https://github.com/yunjey0/yunjey0.github.io/blob/master/assets/img/awspost/4.jpg)
 
 그 후 Save private key를 선택하고 key.ppk를 저장할 위치 및 이름을 지정합니다.
 

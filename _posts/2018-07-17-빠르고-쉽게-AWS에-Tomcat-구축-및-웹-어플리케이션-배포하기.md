@@ -4,7 +4,8 @@
 1. RDS 생성 및 세팅
 2. sqldeveloper에 RDS 계정 연결 및 테이블 구성
 3. EC2 생성 및 세팅 
-4. war 파일 배포
+4. java 및 tomcat 설치
+5. war 파일 배포
 
 
 
@@ -85,3 +86,96 @@ Private key file for ...의 Browse 에서 아까 생성한 ppk 파일을 넣어�
 ![aws7]({{ "/assets/img/awspost/7.JPG"}})
 
 위와 같은 화면이 뜬다면 성공입니다.
+
+
+
+## Java 및 Tomcat 설치
+
+#### Java 설치
+
+계속해서 java와 tomcat을 설치해보도록 하겠습니다.
+
+일단 root 권한으로 접속하겠습니다
+
+```
+sudo passwd root
+```
+
+패스워드 설정을 합니다
+
+```
+su
+```
+
+설정한 패스워드를 입력하고 root 권한으로 실행을 합니다. 
+
+만약을 대비해 root 권한으로 실행하기보다 sudo를 사용하는 방법이 있는데, 
+
+저는 root권한으로 진행하도록 하겠습니다.
+
+
+
+```
+apt-get update
+```
+
+업데이트를 시켜줍니다.
+
+EC2 ubuntu 엔 java가 설치되어있지 않기 때문에 java를 설치하겠습니다.
+
+```
+apt-get install openjdk-8-jre-headless
+```
+
+설치 후 
+
+```
+java -version
+```
+
+으로 설치가 잘 되었는지 확인해봅니다.
+
+
+
+#### Tomcat 설치 및 EC2 포트추가 
+
+```
+apt-get install tomcat8
+```
+
+톰캣을 설치합니다.
+
+기본 설치 path는 /var/lib/tomcat8 입니다.
+
+![aws8]({{ "/assets/img/awspost/8.JPG"}})
+
+8080 포트를 열어주기 위해 네트워크 및 보안> 보안그룹으로 갑니다.
+
+보안그룹 생성을 합니다. 이름 및 설명은 자유입니다.
+
+![aws9]({{ "/assets/img/awspost/9.JPG"}})
+
+하는김에 80번과 1521포트도 추가합니다.
+
+![aws11]({{ "/assets/img/awspost/11.JPG"}})
+
+보안그룹 변경을 눌러 방금 추가한 보안그룹을 체크 후 보안그룹 할당을 눌러 추가시켜 줍니다.
+
+그 후, 인스턴스를 재시작 후 인스턴스 IPv4 퍼블릭 IP로 접속합니다.
+
+```
+http://IPv4퍼블릭IP:8080
+```
+![aws10]({{ "/assets/img/awspost/10.JPG"}})
+
+위와같은 화면이 보인다면 성공입니다.
+
+
+
+
+
+
+
+
+
+

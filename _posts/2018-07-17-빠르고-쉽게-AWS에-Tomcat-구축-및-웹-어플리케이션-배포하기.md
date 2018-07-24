@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 빠르고 쉽게 AWS에 Tomcat 웹 어플리케이션 배포하기
+date: 2017-07-17 10:08:00 +0800
 tags: [aws]
 ---
 ## 목차

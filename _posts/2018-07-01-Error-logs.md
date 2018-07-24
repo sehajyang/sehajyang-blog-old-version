@@ -18,3 +18,11 @@ Maven build가 되지 않아서 svn 으로 받은 프로젝트를 실행할 수 
 build path 에서 jre를 jdk로 잡고 실행
 => 구글링 해보니 jre가 자잘한 오류가 많으니 jdk로 잡으면 잘 된다고 한다. 
 이것때문에 1.5일 날린거 생각하니 뒷목이 땡긴다..
+
+[18.07.24]
+
+* 발생한 문제) 
+java.lang.NoSuchMethodException
+
+* 해결) 
+default 생성자 없어서 남

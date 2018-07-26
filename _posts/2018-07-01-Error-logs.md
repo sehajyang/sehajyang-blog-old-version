@@ -1,0 +1,28 @@
+# Error-logs
+에러 로그 및 해결방법 기록
+
+#### [18.07.23~24]
+
+* 발생한 문제) 
+Maven build가 되지 않아서 svn 으로 받은 프로젝트를 실행할 수 없었다(애당초 컴파일부터 안됨).
+
+* 시도한 방법
+1. jdk 1.7, jre 1.7, tomcat7 로 맞춤(그 환경에선 돌아갔으므로)
+2. jdk, jre, tomcat, eclipse 전부 재설치
+3. 플러그인 오류가 뜨길래 pom.xml의 dependency 추가 후 maven install > update
+4. m2 의 repository 폴더를 날린 후 maven clean > maven install
+5. 오류를 잡고 프로젝트 clean , build 함
+6. build path 에서 jre를 jdk로 잡고 실행
+
+* 해결) 
+build path 에서 jre를 jdk로 잡고 실행
+=> 구글링 해보니 jre가 자잘한 오류가 많으니 jdk로 잡으면 잘 된다고 한다. 
+이것때문에 1.5일 날린거 생각하니 뒷목이 땡긴다..
+
+#### [18.07.24]
+
+* 발생한 문제) 
+java.lang.NoSuchMethodException
+
+* 해결) 
+default 생성자 없어서 남

@@ -1,9 +1,4 @@
----
-layout: post
-title: 빠르고 쉽게 AWS에 Tomcat 웹 어플리케이션 배포하기
-date: 2017-07-17 10:08:00 +0800
-tags: [aws]
----
+
 ## 목차
 
 1. RDS 생성 및 세팅
@@ -12,7 +7,7 @@ tags: [aws]
 4. java 및 tomcat 설치
 5. war 파일 배포
 
-<hr>
+
 
 * 사용하는 프로그램
 
@@ -25,59 +20,11 @@ tags: [aws]
 
 
 
-## RDS 생성 및 세팅
-
-![aws13]({{ "/assets/img/awspost/13.JPG"}})
-
-aws 서비스중 데이터베이스 > RDS 를 선택한 후  create database를 합니다.
-
-![aws12]({{ "/assets/img/awspost/12.JPG"}})
-
-oracle 선택 후 하단의 프리티어 옵션에 체크하고 다음단계로 넘어갑니다.
-
-![aws14]({{ "/assets/img/awspost/14.JPG"}})
-
-DB 인스턴스 이름과 유저 이름 및 암호를 설정합니다. 
-
-다음 단계에서 특별히 설정할 것은 없습니다(퍼블릭 액세스는 가능으로 선택). 
-
-Create database를 합니다.
-
-DB 인스턴스가 생성이 되고, 사용할수 있는 상태가 되기까진 10분 이상 걸립니다. 
-
-![aws15]({{ "/assets/img/awspost/15.JPG"}})
-
-사용 가능한 상태가 되었습니다.
-
-
-
-## sqldeveloper에 RDS 계정 연결 및 테이블 구성
-
-이제 SQL Developer에 연결해보도록 하겠습니다.
-
-생성한 DB 인스턴스의 세부정보를 들어가 엔드포인트 정보를 복사합니다.
-
-![aws16]({{ "/assets/img/awspost/16.JPG"}})
-
-SQL Developer 데이터베이스 접속 새로만들기를 합니다.
-
-![aws17]({{ "/assets/img/awspost/17.JPG"}})
-
-호스트 이름은 아까 복사해둔 엔드포인트 입니다. 
-
-사용자 이름 및 비밀번호는 RDS DB 인스턴스 생성시 했던것과 동일하게 하면 됩니다.
-
-![aws18]({{ "/assets/img/awspost/18.JPG"}})
-
-접속 성공
-
-기존 local에 table 만들고 데이터 입출력 하던것 처럼 이젠, 아마존 RDS DB에 연결해 사용하면 됩니다.
-
-
-
 ## EC2 생성 및 세팅
 
 ### EC2 생성
+
+
 
 ![aws1]({{ "/assets/img/awspost/1.JPG"}})
 
@@ -225,49 +172,10 @@ http://IPv4퍼블릭IP:8080
 
 
 
-## war 파일 배포
 
-FileZila를 실행합니다. 
 
-왼쪽 상단 아이콘을 선택합니다. (이미지의 빨간 동그라미 친 아이콘)
 
-![aws19]({{ "/assets/img/awspost/19.JPG"}})
 
-노란 형광표시된 항목을 채웁니다.
 
-호스트 IP는 EC2 인스턴스의 퍼블릭 IP 입니다.
 
-사용자는 ubuntu고, 키파일은 아까 생성한 ppk 파일을 잡아주면 됩니다.
-
-그 후 연결을 선택합니다.
-
-![aws20]({{ "/assets/img/awspost/20.JPG"}})
-
-연결이 되면 home/ubuntu 가 보이게 됩니다. 
-
-이 안에 웹프로젝트 war 파일을 끌어다 놓으면 전송이 됩니다. 
-
-​						 ![aws21]({{ "/assets/img/awspost/21.JPG"}})
-
-putty로 EC2 인스턴스의 /home/ubuntu 밑에 war 파일이 이동된 걸 볼 수 있습니다. 
-
-```
-mv 이동하려는파일.war /var/lib/tomcat8/webapps
-```
-
-위의 명령어로 이동하려는 war 파일을 tomcat8 밑의 webapps에 넣어주면 알아서 war 파일이 배포가 됩니다.
-
-주소창에서 잘 배포가 되었는지 확인합니다.
-
-```
-http://EC2 인스턴스의 퍼블릭 IP:8080/웹 프로젝트 context Name
-```
-
-만약 webapps 아래 war 파일이 자동으로 풀리지 않았다면
-
-```
-service tomcat8 restart
-```
-
- 톰캣을 restart 시켜줍니다. (10여분 가량 소요)
 

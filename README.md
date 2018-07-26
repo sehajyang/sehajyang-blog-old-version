@@ -1,313 +1,375 @@
-# Attention
-Because of the server, [joytou.github.io](https://github.com/joytou/joytou.github.io) has moved from [`joytou.github.io`](https://github.com/joytou/joytou.github.io) to [`JOYTOU`](https://github.com/joytou/JOYTOU). And no longer supported for [`joytou.github.io`](https://github.com/joytou/joytou.github.io), but you can still use it as a blog template.
-# JOYTOU
-JOYTOU(http://joytou.net.cn) is a BootStrap blog template developed by Joytou Wu. You can create your blog by forking or copying this project. JOYTOU works fine with Git. You can use Coding、GitHub、BitBucket、GitLab as your Git repository. JOYTOU is free and you can change it to suit your theme.
+# Type on Strap 
 
-# Content
+[![Build Status](https://travis-ci.org/Sylhare/Type-on-Strap.svg?branch=master)](https://travis-ci.org/Sylhare/Type-on-Strap) 
+[![Gem Version](https://badge.fury.io/rb/type-on-strap.svg)](https://badge.fury.io/rb/type-on-strap)
 
-| Directory | 目录 | 目錄 | 
-|:----------:|:----------:|:----------:|
-| [English](#en) | [简体中文](#cn)| [繁體中文](#tw) |
-| [Introduction](#introduction) | [概述](#概述) | [概述](#概述) |
-| [Features](#features) | [功能特色](#功能特色) | [功能特色](#功能特色)|
-| [Native Server](#native-server) | [服务版本](#服务版本) | [服務版本](#服務版本) |
-| [File directories](Mainfest.md) | [文件目录](Mainfest.md) | [文件目錄](Mainfest.md) |
-| [Configurations](#configurations) | [配置](#配置) | [配置](#配置) |
-| [Writting article](#writting-article) | [写文章](#写文章) | [寫文章](#寫文章) |
-| [License](#license) | [许可协议](#许可协议) | [許可協議](#許可協議)|
+A free and open-source [Jekyll](https://jekyllrb.com) theme. Based on Rohan Chandra [type-theme](https://github.com/rohanchandra/type-theme) with a few new features:
 
--------
+* Responsive design
+* Portfolio page for your projects
+* Tags compatibility
+* Bootstrap : [Get Bootstrap](http://getbootstrap.com/)
+* Search feature : [Simple-Jekyll-Search](https://github.com/christian-fei/Simple-Jekyll-Search)
+* Math Rendering : [KateX](https://github.com/Khan/KaTeX)
+* Seo Tags : [Jekyll-seo-tag](https://help.github.com/articles/search-engine-optimization-for-github-pages/)
+* Syntax Highlighting: Easily customisable [Base16](https://github.com/chriskempson/base16)
+* Free of rights images from [pexels](https://www.pexels.com/)
 
-# en
+> [Demo](https://sylhare.github.io/Type-on-Strap/)
+ 
+[![Default Type on Strap blog](https://github.com/Sylhare/Type-on-Strap/blob/master/screenshot.png?raw=true)](https://sylhare.github.io/Type-on-Strap/)
 
-## Introduction
-JOYTOU(http://joytou.nets.hk) is a BootStrap blog template developed by Joytou Wu. You can create your blog by forking or copying this project. JOYTOU works fine with Git. You can use Coding、GitHub、BitBucket、GitLab as your Git repository. JOYTOU is free and you can change it to suit your theme. But no matter what, you must keep the copyright.
+## Table of Contents
 
-## Features
-1. BootStrap style
-2. Blog basic functions
-3. Top navigation bar
-4. Automatically generate Sitemap.xml
-5. View the article by date, category, tag, etc.
-6. The important articles can be placed at the top
-7. Article sharing
-8. Multi-language
-9. Article comment
-10. Global search
-11. JQuery responsive design
+1. [Usage](https://github.com/Sylhare/Type-on-Strap#Usage)
+2. [Structure](https://github.com/Sylhare/Type-on-Strap#structure)
+3. [Configure Type on Strap](https://github.com/Sylhare/Type-on-Strap#configure-type-on-strap)
+4. [Layout](https://github.com/Sylhare/Type-on-Strap#layout)
+5. [Feature pages](https://github.com/Sylhare/Type-on-Strap#feature-pages)
+6. [Template as a Gem](https://github.com/Sylhare/Type-on-Strap#Template-as-a-Gem)
+7. [License](https://github.com/Sylhare/Type-on-Strap#license)
 
-## Native Server
-Clone from github.com:
+## Usage
 
-- Clone with SSH:
+1. Fork and clone the [Type on Strap repo](https://github.com/sylhare/Type-On-Strap): `git clone https://github.com/Sylhare/Type-on-Strap.git`
+2. Install [Jekyll](https://jekyllrb.com/docs/installation/): `gem install jekyll`, check [#1](https://github.com/Sylhare/Type-on-Strap/issues/1) if you have a problem.
+3. Install the theme's dependencies: `bundle install`
+4. Customize the theme
+	- Github Page: [update `_config.yml`](https://github.com/Sylhare/Type-on-Strap#site-configuration)
+5. Run the Jekyll server: `jekyll serve`
+
+## Structure
+
+Here are the main files of the template
+
+```bash
+jekyll-theme-basically-basic
+├── _draft	               # To store your drafts, they won't be published on your site
+├── _includes	               # theme includes
+├── _layouts                   # theme layouts (see below for details)
+├── _portfolio	               # collection of article to be populated in the portfolio page
+├── _posts                     # Blog posts
+├── _sass                      # Sass partials 
+├── assets
+|  ├── js	               # theme javascript, Katex, jquery, bootstrap, jekyll search, 
+|  ├── css                     # isolated Bootstrap, font-awesome, katex and main css
+|  ├── fonts		       # Font-Awesome, Glyphicon, and other fonts
+|  └── img		       # Images used for the template
+├── pages
+|   ├── 404.md		       # To be displayed when url is wrong
+|   ├── about.md               # About example page
+|   ├── gallery.md              # Gallery page for your photos
+|   ├── portfolio.md	         # Portfolio page for your projects
+|   ├── search.html	       # Search page
+|   └── search.json            # Specify the search target (page, post, collection)
+├── _config.yml                # sample configuration
+└── index.html                 # sample home page (blog page paginated)
 ```
-git clone git@github.com:joytou/joytou.github.io.git
+	
+## Configure Type on Strap
+
+Open `_config.yml` in a text editor to change most of the blog's settings.
+
+If a variable in this document is marked as "optional", disable the feature by removing all text from the variable. 
+
+
+### Site configuration
+Configure Jekyll as your own blog or with a subpath in in `_config.yml`:
+
+Jekyll website *without* a subpath (such as a GitHub Pages website for a given username):
+
+```yml
+  baseurl: ""
+  url: "https://username.github.io"
 ```
 
-- Clone with HTTPS:
+Jekyll website *with* subpath (like the Type on Strap [demo](https://sylhare.github.io/Type-on-Strap/) page):
+
+```yml
+  baseurl: "/sub-directory"
+  url: "https://username.github.io/"
 ```
-git clone https://github.com/joytou/joytou.github.io.git
+
+Please configure this  before using the theme.
+
+### Meta and Branding
+
+Meta variables hold basic information about your Jekyll site which will be used throughout the site and as meta properties for search engines, browsers, and the site's RSS feed.
+
+Change these variables in `_config.yml`:
+
+```yml
+  theme_settings:
+    title: My Jekyll Blog                 # Name of website
+    avatar: assets/img/triangular.svg     # Path of avatar image, to be displayed in the theme's header
+    gravatar: f98....6bfc                 # MD5 hash of your email address
+    description: My blog posts            # Short description, primarily used by search engines
 ```
 
-## Configurations
-in _config.yml:
+### Customizing text
 
-| Key | Value | Annotation |
-|:----------:|:----------:|:----------|
-|      email      |      1540294142@qq.com      |       Your e-mail address     |
-|      author      |      Joytou Wu      |      The article author's name      |
-|       url     |     http://joytou.nets.hk       |      Your site address, and do not add  `/`  in the end      |
-|     github       |      https://github.com/joytou/      |      Your github account address      |
-|      github_username      |      joytou      |       Your github account name     |
-|      repo      |      joytou.github.io      |      Your repository name     |
-|      owner_name      |      joytou      |      The site owner name      |
-|     description       |      ---      |     Your site description       |
-|      keywords      |      ---      |      Your site keywords, and it must listted as array      |
-|       remind     |      BOOL      |       Whether to remind you to upgrade the latest version when there is the latest version.     |
-|      BaiduSiteVerification      |      ---      |      The string of Baidu Site Verification. If you didn't have, left it blank.      |
-|      51la      |      ---      |      The String of 51.la statistic's id. If you didn't have, left it blank.       |
-|       51lamb     |      ---      |      The style of 51.la statistic's data reference.       |
-> Please refer to the official website for other variables.
+#### Footer and Header's text
 
-in each /_data/(languages code).yml:
+Customize your site header/footer with these variables in `_config.yml`:
 
-| Key | Value | Annotation |
-|:----------:|:----------:|:----------|
-| sitename | JOYTOU | Your site name |
-| sitesubname | An amateur programmer who loves to sit around and refuse to rest! | Your site subname |
-| sitedescription | This blog template build by builder from style | Your site descriphtion(please keeping the string: 'builder', 'style') |
-| siteabout | JOYTOU was done by me (Joytou). If you like this template, you can subsidize me a little. | Writting something about your site or yourself(yourselves) |
-
-## Writting article
-post format:
+```yml
+  theme_settings:
+    header_text: Welcome to my Jekyll blog
+    header_text_feature_image: assets/img/sample3.png
+    footer_text: Copyright 2017
 ```
+
+#### Localisation string
+
+Change localization string variables in `_config.yml`.
+
+English text used in the theme has been grouped  so you can quickly translate the theme or change labels to suit your needs.
+
+```yml
+  theme_settings:
+     str_follow_on: "Follow on"
+     str_rss_follow: "Follow RSS feed"
+     str_email: "Email"
+     str_next_post: "Next post"
+     str_previous_post: "Previous post"
+     str_next_page: "Next"
+     str_previous_page: "Prev"
+     str_continue_reading: "Continue reading"
+     str_javascript_required_disqus: "Please enable JavaScript to view comments."
+```
+
+
+### Other features
+
+Jekyll works with [liquid](https://shopify.github.io/liquid/) tags usually represented by:
+
+```
+{{ liquid.tag | filter }}
+```
+
+These are useful to render your jekyll files. You can learn more about them on [shopify's doc](https://help.shopify.com/themes/liquid/basics)
+
+### Footer's icons
+
+Display the site's icon from [Font Awesome](https://fortawesome.github.io/Font-Awesome/) in the footer. All icon variables should be your username enclosed in quotes (e.g. "username") in `_config.yml`, except for the following variables:
+
+```yml
+  theme_settings:
+     rss: true                                                   # Make sure you created a feed.xml with feed.xml layout
+     email_address: type@example.com
+     linkedin: https://www.linkedin.com/in/FirstLast
+     stack_exchange: https://stackoverflow.com/users/0000/first-last
+```
+
+### Comments (via Disqus)
+
+Optionally, if you have a [Disqus](https://disqus.com/) account, you can show a 
+comments section below each post.
+
+To enable Disqus comments, add your [Disqus shortname](https://help.disqus.com/customer/portal/articles/466208) to your project's `_config.yml` file:
+
+```yml
+  theme_settings:
+     disqus_shortname: my_disqus_shortname
+```
+
+### Google Analytics
+
+To enable Google Analytics, add your [tracking ID](https://support.google.com/analytics/answer/1032385) 
+to `_config.yml` like so:
+
+```yml
+  theme_settings:
+     google_analytics: UA-NNNNNNNN-N
+```
+
+### Math typesetting
+
+When KateX is set in `_config.yml`:
+
+```yml
+  theme_settings:
+     katex: true # to Enable it
+```
+
+You can then wrap math expressions with `$$` signs in your posts and make sure you have set the `katex` variable in `_config.yml` to `true` for math typesetting.
+
+For inline math typesetting, type your math expression on the *same line* as your content. For example:
+
+```latex
+Type math within a sentence $$2x^2 + x + c$$ to display inline
+```
+
+For display math typesetting, type your math expression on a *new line*. For example:
+
+```latex
+$$
+  \bar{y} = {1 \over n} \sum_{i = 1}^{n}y_i
+$$
+```
+
+### Post excerpt
+
+The [excerpt](https://jekyllrb.com/docs/posts/#post-excerpts) are the first lines of an article that is display on the blog page. The length of the excerpt has a default of around `250` characters and can be manually set in the post using:
+```yml
+---
+layout: post
+title: Sample Page
+excerpt_separator: <!--more-->
+---
+
+some text in the excerpt
+<!--more-->
+... rest of the text not shown in the excerpt ...
+```
+
+The html is stripped out of the excerpt so it only display text.
+
+## Layout
+Please refer to the [Jekyll docs for writing posts](https://jekyllrb.com/docs/posts/). Non-standard features are documented below.
+
+### Layout: Post
+
+This are the basic features you can use with the  `post` layout.
+
+```yml
+---
+layout: post
+title: Hello World                                # Title of the page
+feature-img: "assets/img/sample.png"              # Add a feature-image to the post
+thumbnail: "assets/img/thumbnail/sample-th.png"   # Add a thumbnail image on blog view
+tags: [sample, markdown, html]
+---
+```
+
+With `thumbnail`, you can add a smaller image than the `feature-img`. If you don't want/have a thumbnail you can still use the same image as the feature one.
+
+### Layout: Page
+
+The page layout have a bit more features explained here.
+
+```yml
+---
+layout: page
+title: "About" 
+subtitle: "This is a subtitle"   
+feature-img: "assets/img/sample.png" 
+permalink: /about.html               # Set a permalink your your page
+hide: true                           # Prevent the page title to appear in the navbar
+tags: [sample, markdown, html]
+---
+```
+
+The hide only hides your page from the navigation bar, it is however still generated and can be access through its link. Use the `_draft` folder to keep files from being generated on your site.
+
+### Layout: Bootstrap
+
+This is the page layout modified to have bootstrap activated to format your content accordingly with the theme.
+
+```yml
 --- 
-layout: post 
-
-title:  test       
-#article title 
-
-date:   2015-04-05 08:00:00 +0800     
-#publish date 
-
-nav: post     
-
-stickie: true         
-#Make the article stick to the top if true 
-
-category: official         
-#the category for the article 
-
-tags: [log, bootstrap, joytou]     
-#the tags for the article, it should be a array 
---- 
-* content 
-{:toc} 
-
-Summary Content
-#Summary content. 
-
-<!-- more --> 
-
-Article mainly content
-#Writting the article here. 
+layout: bootstrap
+---
 ```
 
+### Layout: Default
+
+This layout includes the head, navigation bar and footer around your content.
+
+## Feature pages
+
+All feature pages besides the "home" one are stored in the `page` folder, they will appear in the navigation bar unless you set `Hide: true` in the front matter. 
+
+Here are the documentation for the other feature pages that can be added through `_config.yml`.
+
+### Home
+
+This page is the used as the home page of the template (in the `index.html`). It displays the list of article in `_posts`.
+You can use this layout in another page (adding a title to it will make it appear in the navigation bar).
+
+### Portfolio
+
+Portfolio is a feature page that will take all the markdown/html files in the `_portfolio` folder to create a 3-columns image portfolio matrix.
+
+To use the portfolio, simply create a `portfolio.md` with this information inside:
+```yml
+--- 
+layout: page
+title : Portfolio 
+---
+
+{% include portfolio.html %}
+```
+
+### Gallery
+
+You can create a gallery using [Masonry JS](https://masonry.desandro.com/) which will placing the pictures in optimal position based on available vertical space. You need to specify the `gallery_path` which will be used to find the pictures to render. It will take all of the picture under that directory. Then use the `include` to add it in your page. 
+
+```
+---
+layout: page
+title: Gallery
+gallery: "assets/img/pexels"
+---
+
+{% include gallery.html gallery_path=page.gallery %}
+```
+
+
+### Search
+
+The search feature is based on [Simple-Jekyll-search](https://github.com/christian-fei/Simple-Jekyll-Search) there is a `search.json` file that will create a list of all of the site posts, pages and portfolios. 
+
+Then there's a `search.js` displaying the formatted results entered in the `search.html` page.
+
+
+The search page can be enable/disable in the navigation bar through the `_config.yml` via:
+```yml
+special_page:
+    search: 
+      icon: "search"
+      enabled: true
+```
+
+### Tags
+
+Tags should be placed between `[]` in your post metadata. Separate each tag with a comma. Tags are recommended for posts and portfolio items.
+
+For example:
+
+```yml
+---
+layout: post
+title: Markdown and HTML
+tags: [sample, markdown, html]
+---
+```
+
+> Tags are case sensitive `Tag_nAme` ≠ `tag_name`
+
+All the tags will be listed in `tags.html` with a link toward the pages or posts.
+The tags page can be enable/disable in the navigation bar through the `_config.yml` via:
+
+```yml
+special_page:
+    tags: 
+      icon: "tags"
+      enabled: true
+```
+
+## Template as a Gem
+
+You can use Type-on-strap as a [gem](https://rubygems.org/gems/type-on-strap). Checkout an example in the [gem-demo branch](https://github.com/Sylhare/Type-on-Strap/tree/gem-demo).
+To make the feature pages available in from the gem I created them as layouts that can be invoked in the pages folder.
+
+So if you're using the template as a theme, Make sure you have:
+  - A `index.html` file
+  - The right `_config.yml` with the theme setting such as `theme: type-on-strap` uncommented
+  - The feature page included. (ex: as it is already in `pages`)
+  - Some content ready in `_posts` and `_portfolio` to be displayed
+
+Now you can use any theme gem with github pages : [29/11/2017 Github Pages Broadcast](https://github.com/blog/2464-use-any-theme-with-github-pages)
 
 ## License
-By using the Service, you [agree to comply with all the terms of this Agreement](https://github.com/joytou/joytou.github.io/raw/master/LICENSE).
- 
--------
 
-# cn
-
-## 概述
-JOYTOU(http://joytou.nets.hk) 是一款由Joytou Wu基于Bootstrap开发的博客模板。您可以通过fork或者复制本项目进行创建您的博客。JOYTOU集成了Git代码版本控制，用户可以选择 Coding、GitHub、BitBucket、GitLab 等任意的代码仓库。JOYTOU是免费的，您可以更改以适应您的主题。但不管如何您务必保留相关版权。
-
-## 功能特色
-1. BootStrap样式
-2. 博客基本功能
-3. 顶部导航栏
-4. 自动Sitemap.xml
-5. 通过日期、类别、标签等分类文章
-6. 重要文章可置顶
-7. 文章分享
-8. 多语言
-9. 文章评论
-10. 全局搜索
-11. JQuery响应式设计
-
-## 服务版本
-从Github克隆项目：
-
-- 用SSH克隆：
-```
-git clone git@github.com:joytou/joytou.github.io.git
-```
-
-- 用HTTPS克隆：
-```
-git clone https://github.com/joytou/joytou.github.io.git
-```
-
-## 配置
-_config.yml:
-
-| 键 | 值 | 备注 |
-|:----------:|:----------:|:----------|
-|      email      |      1540294142@qq.com      |       您的电子邮件地址     |
-|      author      |      Joytou Wu      |      文章作者名称      |
-|       url     |     http://joytou.nets.hk       |      您的网址，末尾不能加上 `/`       |
-|     github       |      https://github.com/joytou/      |      您的Github用户地址      |
-|      github_username      |      joytou      |       您的Github用户名     |
-|      repo      |      joytou.github.io      |      您的repository名字     |
-|      owner_name      |      joytou      |      网站所有者名字      |
-|     description       |      ---      |     网站的描述       |
-|      keywords      |      ---      |      网站的关键词，必须以数组形式列出      |
-|       remind     |      BOOL      |       是否提醒可升级新版本     |
-|      BaiduSiteVerification      |      ---      |      百度网站的验证码。如果没有，请留空白      |
-|      51la      |      ---      |      51.la网站的统计id。如果没有，请留空白       |
-|       51lamb     |      ---      |      51.la数据引用的样式       |
-> 其它变量请参考官网的介绍。
-
-各个 /_data/(语言代码).yml 文件:
-
-| 键 | 值 | 备注 |
-|:----------:|:----------:|:----------|
-| sitename | JOYTOU | 您的网站名称 |
-| sitesubname | 一个热爱折腾、不肯休息的业余程序员！ | 您的网站副名称 |
-| sitedescription | 此博客模板由builder通过style创建 | 您的网站描述(请保留字符串：'builder'、'style') |
-| siteabout | JOYTOU是由我(Joytou)单独完成的。如果您喜欢此模板，可以对此模板小额资助。 | 一些关于您的网站或者您(们)的信息 |
-
-## 写文章
-文章格式：
-```
---- 
-layout: post 
-
-title:  test       
-#文章标题 
-
-date:   2015-04-05 08:00:00 +0800     
-#发布日期 
-
-nav: post     
-
-stickie: true         
-#如果为true则文章置顶 
-
-category: official         
-#文章的分类 
-
-tags: [log, bootstrap, joytou]     
-#文章的标签，必须是数组 
---- 
-* content 
-{:toc} 
-
-Summary Content
-#摘要内容 
-
-<!-- more --> 
-
-Article mainly content
-#在这儿写文章
-```
-
-## 许可协议
-一旦您使用本服务，即表示[您同意遵循本协议的所有约定](https://github.com/joytou/joytou.github.io/raw/master/LICENSE)。
-
--------
-
-# tw 
-
-## 概述 
-JOYTOU(http://joytou.nets.hk) 是一款由Joytou Wu基於Bootstrap開發的博客模板。您可以通過fork或者復製本項目進行創建您的博客。 JOYTOU集成了Git代碼版本控制，用戶可以選擇 Coding、GitHub、BitBucket、GitLab 等任意的代碼倉庫。 JOYTOU是免費的，您可以更改以適應您的主題。但不管如何您務必保留相關版權。 
-
-## 功能特色 
-1. BootStrap樣式 
-2. 博客基本功能 
-3. 頂部導航欄 
-4. 自動Sitemap.xml 
-5. 通過日期、類別、標籤等分類文章 
-6. 重要文章可置頂 
-7. 文章分享 
-8. 多語言 
-9. 文章評論 
-10. 全局搜索 
-11. JQuery響應式設計 
-
-## 服務版本 
-從Github克隆項目： 
-
-- 用SSH克隆： 
-``` git clone git@github.com:joytou/joytou.github.io.git ``` 
-
-- 用HTTPS克隆： 
-``` git clone https://github.com/joytou/joytou.github.io.git ``` 
-
-## 配置 
-_config.yml: 
-
-| 鍵 | 值 | 備註 | 
-|:----------:|:----------:|:----------| 
-| email | 1540294142@qq.com | 您的電子郵件地址 | 
-| author | Joytou Wu | 文章作者名稱 | 
-| url | http://joytou.nets.hk | 您的網址，末尾不能加上 `/` | 
-| github | https://github.com/joytou/ | 您的Github用戶地址 | 
-| github_username | joytou | 您的Github用戶名 | 
-| repo | joytou.github.io | 您的repository名字 | 
-| owner_name | joytou | 網站所有者名字 | 
-| description | --- | 網站的描述 | 
-| keywords | --- | 網站的關鍵詞，必須以數組形式列出 | 
-| remind | BOOL | 是否提醒可升級新版本 | 
-| BaiduSiteVerification | --- | 百度網站的驗證碼。如果沒有，請留空白 | 
-| 51la | --- | 51.la網站的統計id。如果沒有，請留空白 | 
-| 51lamb | --- | 51.la數據引用的樣式 | 
-> 其它變量請參考官網的介紹。 
-
-各個 /_data/(語言代碼).yml 文件:
-
-| 鍵 | 值 | 備註 |
-|:----------:|:----------:|:----------|
-| sitename | JOYTOU | 您的網站名稱 |
-| sitesubname | 一個熱愛折騰、不肯休息的業餘程序員！ | 您的網站副名稱 |
-| sitedescription | 此博客模板由builder通過style創建 | 您的網站描述(請保留字符串：'builder'、'style') |
-| siteabout | JOYTOU是由我(Joytou)單獨完成的。如果您喜歡此模板，可以對此模板小額資助。 | 一些關於您的網站或者您(們)的信息 |
-## 寫文章
-post format:
-```
---- 
-layout: post 
-
-title:  test       
-#文章標題
-
-date:   2015-04-05 08:00:00 +0800     
-#發佈日期
-
-nav: post     
-
-stickie: true         
-#如果為true則文章置頂
-
-category: official         
-#文章的分類
-
-tags: [log, bootstrap, joytou]     
-#文章的標籤，必須是數組
---- 
-* content 
-{:toc} 
-
-Summary Content
-#摘要內容
-
-<!-- more --> 
-
-Article mainly content
-#在這兒寫文章
-```
-
-## 許可協議 
-一旦您使用本服務，即表示[您同意遵循本協議的所有約定](https://github.com/joytou/joytou.github.io/raw/master/LICENSE)。
+[The MIT License (MIT)](https://raw.githubusercontent.com/Sylhare/Type-on-Strap/master/LICENSE)

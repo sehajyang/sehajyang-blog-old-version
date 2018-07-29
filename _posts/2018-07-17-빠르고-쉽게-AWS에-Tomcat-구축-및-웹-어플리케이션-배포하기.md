@@ -1,4 +1,8 @@
-
+---
+layout: default
+comments: true
+# other options
+---
 ## 목차
 
 1. RDS 생성 및 세팅

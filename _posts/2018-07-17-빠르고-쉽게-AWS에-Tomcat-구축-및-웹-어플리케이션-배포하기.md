@@ -1,7 +1,5 @@
 ---
-layout: default
 comments: true
-# other options
 ---
 ## 목차
 

@@ -22,7 +22,7 @@ theme_settings:
 
   # Icons
   rss: true  # Make sure you created a feed.xml with feed.xml layout
-  email_address: sehajyang@gmail.com
+  email_address: "sehajyang@gmail.com"
   behance:
   bitbucket:
   dribbble:
@@ -33,14 +33,14 @@ theme_settings:
   google_plus:
   instagram:
   keybase:
-  linkedin:  https://www.linkedin.com/in/yun-jay-09b834165/
+  linkedin:
   pinterest:
   reddit:
   soundcloud:
   stack_exchange:  # Full URL
   steam:
   tumblr:
-  twitter: # "twitter username"
+  twitter: "@yunjey0"
   vimeo:
   wordpress:
   youtube:
@@ -60,7 +60,7 @@ theme_settings:
 
   # Scripts / Features 
   google_analytics: # Tracking ID, e.g. "UA-000000-01"
-  disqus_shortname:https-yunjey0-github-io
+  disqus_shortname: "https-yunjey0-github-io"
   katex: true # Enable if using math markup
   
   special_page:

@@ -1,4 +1,7 @@
 ---
+layout: post
+title: 빠르고 쉽게 AWS에 Tomcat 구축 및 웹 어플리케이션 배포하기
+tags: [AWS]
 comments: true
 ---
 ## 목차

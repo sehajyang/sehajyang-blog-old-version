@@ -2,5 +2,6 @@
 layout: null
 ---
 User-agent: *
-Disallow:
+Allow: /
 
+Sitemap: https://yunjey0.github.io/sitemap.xml

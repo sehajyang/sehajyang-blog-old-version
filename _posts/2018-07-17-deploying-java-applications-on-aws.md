@@ -1,17 +1,23 @@
 ---
 layout: post
-title: 빠르고 쉽게 AWS에 Tomcat 구축 및 웹 어플리케이션 배포하기
+title: 빠르고 쉽게 AWS에 웹 어플리케이션 배포하기
 tags: [AWS]
 comments: true
+sitemap :
+  changefreq : daily
+  priority : 1.0
 ---
 ## 목차
 
 1. RDS 생성 및 세팅
-2. sqldeveloper에 RDS 계정 연결 및 테이블 구성
-3. EC2 생성 및 세팅 
-4. java 및 tomcat 설치
-5. war 파일 배포
 
+2. sqldeveloper에 RDS 계정 연결 및 테이블 구성
+
+3. EC2 생성 및 세팅 
+
+4. java 및 tomcat 설치
+
+5. war 파일 배포
 
 
 * 사용하는 프로그램

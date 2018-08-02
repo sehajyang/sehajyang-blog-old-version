@@ -8,7 +8,7 @@ tags: [aboutme]
 
 # About Me
 
-## Yunjey
+## Seha
 
 Junior Web Developer
 넓고 얕은 지식 확장중인 뉴비개발자

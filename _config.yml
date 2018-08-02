@@ -1,7 +1,7 @@
 # SITE CONFIGURATION
 baseurl: ""
 url: "https://yunjey0.github.io"
-title: Yunjey Github blog
+title: Seha github Blog
 description: "A website with blog posts and pages" # used by search engines
 
 
@@ -18,7 +18,7 @@ theme_settings:
      <p>Seha 기록 블로그</p>
   header_text_feature_image: assets/img/pexels/triangular.jpeg
   footer_text: >
-   Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/yunjey0/Type-on-Strap">Type on Strap</a>
+   Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sehajyang/Type-on-Strap">Type on Strap</a>
 
   # Icons
   rss: true  # Make sure you created a feed.xml with feed.xml layout
@@ -29,7 +29,7 @@ theme_settings:
   facebook:
   flickr:
   gitlab:
-  github: "yunjey0"
+  github: "sehajyang"
   google_plus:
   instagram:
   keybase:

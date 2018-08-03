@@ -33,14 +33,14 @@ theme_settings:
   google_plus:
   instagram:
   keybase:
-  linkedin:
+  linkedin: "linkedin.com/in/yun-jay-09b834165"
   pinterest:
   reddit:
   soundcloud:
   stack_exchange:  # Full URL
   steam:
   tumblr:
-  twitter: "@yunjey0"
+  twitter: "@sehajyang"
   vimeo:
   wordpress:
   youtube:
@@ -49,7 +49,7 @@ theme_settings:
   share_buttons:
     facebook: true
     twitter: true
-    google_plus: true
+    google_plus:
     tumblr:
     pinterest:
     pocket:
@@ -95,14 +95,14 @@ theme_settings:
   
   
 # PAGINATION
-paginate: 5
+paginate: 10
 paginate_path: "blog/page:num"
 
 
 # PORTFOLIO
 collections:
   portfolio:
-    output: true
+    output: false
     permalink: /:collection/:name
 
 

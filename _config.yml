@@ -1,8 +1,8 @@
 # SITE CONFIGURATION
 baseurl: ""
 url: "https://sehajyang.github.io"
-title: Seha github Blog
-description: "A website with blog posts and pages" # used by search engines
+title: "Seha github Blog"
+description: "Seha github Blog" # used by search engines
 
 
 # THEME-SPECIFIC CONFIGURATION
@@ -16,7 +16,7 @@ theme_settings:
   # Header and footer text
   header_text: > #two or three lines to describe your site
      <p>Seha 기록 블로그</p>
-  header_text_feature_image: assets/img/pexels/triangular.jpeg
+  header_text_feature_image: assets/img/pexels/desk-open.jpeg
   footer_text: >
    Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sehajyang/Type-on-Strap">Type on Strap</a>
 

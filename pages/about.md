@@ -8,57 +8,59 @@ tags: [aboutme]
 
 # About Me
 
-## Seha
+https://about.me/sehajyang
+
+## Seha 
 
 Junior Web Developer
+
 넓고 얕은 지식 확장중인 뉴비개발자
-욕심내되 꾸준히 하자는 모토를 갖고있습니다 :)
+
+욕심내되 꾸준히 하자는 모토를 갖고있습니다 :D
+
+[기술스택은 이쪽:point_left:](https://stackshare.io/sehajyang/my-stack)
 
 
 ## Skill Set
 
-Java / JavaScript    
+Java
 
-JSP/Servlet / JSON / Jquery / Ajax / JSTL /  html5 / CSS3 / Spring / Spring Security     
+JavaScript / Node.js
 
-BootStrap / Mybatis 
-
-ApacheTomcat 
+Spring
 
 Docker / AWS
 
+Linux 
+
 MySQL / Oracle
 
-Git / SVN 
-
-Ubuntu / Kali Linux 
-
-Eclipse / Vim / Visual Studio
-
+Eclipse / Atom / VS Code / Vim
 
 
 ## Learning
 
 Unmanaged languages (C) / Python
 
-Spring Boot / Node.js
+React / React-Native
+
+MongoDB
 
 Secure Coding
 
 Reversing engineering     
 
-Penetration testing(Metasploit)   
-
-Computer architecture / Data structure
-
-
 
 ## Interesting
 
-Openstack / Docker / TypeScript
+Vue.js / Angular.js / 
+
+TypeScript
+
+Openstack / Docker
 
 
-## Experiences
+## Seminar || Meetup
 
 * 180628 [OpenInfra Days Korea 2018](https://www.openinfradays.kr/)
 
@@ -70,12 +72,17 @@ Openstack / Docker / TypeScript
 
 * 180728 [Seoul.js Lightning Talk]()
 
+* 180809 [Okky 오픈소스 세미나]()
+
 
 ## Contact
-[Mail](sehajyang@gmail.com)
 
-[Blog](https://yunjey0.github.io/)
+[Mail](mailto:sehajyang@gmail.com)
 
-[Twitter](https://twitter.com/yunjey0)
+[Blog](https://sehajyang.github.io/)
+
+[Twitter](https://twitter.com/sehajyang)
+
+
 
 

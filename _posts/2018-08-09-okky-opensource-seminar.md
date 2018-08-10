@@ -1,10 +1,11 @@
 ---
-title :  줘도 못 먹나. 오픈소스 
+title: 오픈소스, 줘도 못 먹나 후기
+subtitle: 오픈소스로 팀의 개발 생산성 높이기
 layout: post
 tags: seminar
 ---
 
-# Okky 오픈소스 세미나
+# Okky 오픈소스 세미나 오픈소스, 줘도 못 먹나 오픈소스로 팀의 개발 생산성 높이기
 
 ![oss_0]({{ "/assets/img/blogpost/oss_0.jpg"}})
 
@@ -31,7 +32,7 @@ __단위테스트__(TDD) (function기준)으로 만들어놓는게 좋다.
 
 ## 오픈소스 시작하기
 
-__오픈소스 경험  = 시간 + 시행착오 + 성공실패*__
+__오픈소스 경험  = 시간 + 시행착오 + 성공실패__
 
 그러니 일단 사용부터 (Getting started) 해라!
 
@@ -90,7 +91,7 @@ default setting 문서를 보고 시작하는게 좋다.
 * Mocha, SonarQube, ZAP
 ```
 
-
+**title 을 누르면 해당 오픈소스 홈페이지로 이동합니다**
 
 ### [Yona](https://github.com/yona-projects/yona)
 

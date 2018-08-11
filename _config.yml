@@ -17,7 +17,7 @@ theme_settings:
   header_text: > #two or three lines to describe your site
      <p>Seha 기록 블로그</p>
      <p>블로그 리뉴얼중입니다</p>
-  header_text_feature_image: assets/img/pexels/desk-open.jpeg
+  header_text_feature_image: assets/img/pexels/computer.jpeg
   footer_text: >
    Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sehajyang/Type-on-Strap">Type on Strap</a>
 

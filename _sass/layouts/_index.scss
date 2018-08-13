@@ -40,6 +40,8 @@
 .posts {
     .post-teaser {
         @extend %padding-regular;
+        padding-top: 2%;
+        padding-bottom:2%;
         width: 100%;
         margin-bottom: 0;
         display: inline-block;

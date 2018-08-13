@@ -17,4 +17,5 @@ feature-img: "assets/img/pexels/circuit.jpeg"
 * [Error logs](https://sehajyang.github.io/logs/2018/07/30/error-log.html)
 
 ## Seminar
+* [[OKKY 세미나] 오픈소스, 줘도 못 먹나 - 오픈소스로 팀의 개발 생산성 높이기 후기](https://okky.kr/article/486676)
 * [Open infra day 참석 후기](https://sehajyang.github.io/2018/07/03/open-infra-day.html)

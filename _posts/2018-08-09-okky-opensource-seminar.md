@@ -2,6 +2,7 @@
 title: 오픈소스, 줘도 못 먹나 후기
 subtitle: 오픈소스로 팀의 개발 생산성 높이기
 layout: post
+feature-img: "assets/img/blogpost/oss_0.jpg"
 tags: seminar
 ---
 

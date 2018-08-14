@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    line-height: 35px;
 }
 
 figure {
@@ -29,7 +30,8 @@ html {
 body {
     color: $text-color;
     font-family: $font-family-main;
-    font-size: 1.0em;
+    font-size: 1.1em;
+    line-height
     word-wrap: break-word;
 }
 

@@ -55,7 +55,7 @@ tags: [study]
 
 ##### 23 - [Memento](#memento-pattern)
 
-
+<hr>
 ## 디자인 원칙(SOLID)
 
 1. Open-Closed-Principle(개방 폐쇄 원칙)
@@ -79,7 +79,7 @@ tags: [study]
 
 5. Interface Segregation Principle(인터페이스 분리 원칙)
 
-
+<hr>
 ## Singleton Pattern
  
 특정클래스에 대해 객체 인스턴스 한개만 만들어 사용하기 위한 패턴

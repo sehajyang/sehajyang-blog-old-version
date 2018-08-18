@@ -94,11 +94,11 @@ public MyClass {
 	}
 }
 ```
->> MyClass에 정적메소드가 있고 그 정적 메소드는 이렇게 호출할 수 있다.
+MyClass에 정적메소드가 있고 그 정적 메소드는 이렇게 호출할 수 있다.
 
 MyClass.getInstance();
 
->> 정적 메소드를 지칭할 때는 클래스 이름을 써야한다.(MyClass)
+정적 메소드를 지칭할 때는 클래스 이름을 써야한다.(MyClass)
 
 
 

@@ -2,13 +2,13 @@
 layout: page
 title: About Me
 permalink: /about/
-feature-img: "assets/img/pexels/circuit.jpeg"
+feature-img: "assets/img/pexels/computer2.jpeg"
 tags: [aboutme]
 ---
 
 # About Me
 
-https://about.me/sehajyang
+[https://about.me/sehajyang](https://about.me/sehajyang)
 
 ## Seha 
 
@@ -18,7 +18,7 @@ Junior Web Developer
 
 욕심내되 꾸준히 하자는 모토를 갖고있습니다 :D
 
-[기술스택은 이쪽:point_left:](https://stackshare.io/sehajyang/my-stack)
+[기술스택은 이쪽<-](https://stackshare.io/sehajyang/my-stack)
 
 
 ## Skill Set

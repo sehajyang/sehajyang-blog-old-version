@@ -20,9 +20,10 @@ KimJunJin님의 면접에 나왔던 질문의 답을 찾아서 정리 했습니�
     
     => pc register: 쓰레드 생성시 생성되는 영역
     
-    추가:http://asfirstalways.tistory.com/158
+    [추가](http://asfirstalways.tistory.com/158)
 
 2. GC 처리방법
+
     => major, minor부분이 있다. 더이상 콜이 되지 않을 new로 만들어진 힙역에 할당된 아이템들을 수집해 삭제하는 작업을 한다.
     
     => 삭제된 객체의 메모리를 반환
@@ -57,7 +58,7 @@ KimJunJin님의 면접에 나왔던 질문의 답을 찾아서 정리 했습니�
         
         iii) Minor Garbage Collection에 비해 시간이 오래 걸리고 실행 중 프로세스가 정지
 
-        출처: http://huelet.tistory.com/entry/JVM-메모리구조
+        [출처](http://huelet.tistory.com/entry/JVM-메모리구조) 
 
 3. HashMap HashTable concurrentHashMap
 
@@ -67,7 +68,7 @@ KimJunJin님의 면접에 나왔던 질문의 답을 찾아서 정리 했습니�
     
     concurrentHashMap : Java5 부터 지원하는 동기화 지원, HashTable보다 좋다고한다.
     
-    참고:http://odol87.tistory.com/3
+    [참고](http://odol87.tistory.com/3)
 
 4. 접근제어자
 
@@ -106,7 +107,11 @@ KimJunJin님의 면접에 나왔던 질문의 답을 찾아서 정리 했습니�
 
 9. Synchronize 방법
 
-    => 기본적으로는 Collections라는 util 클래스에서 제공되는 static 메소드를 통해 이를 해결할 수 있다. Collections.synchroziedList(), Collections.synchroziedSet(), Collections.synchroziedMap() 등이 존재한다. JDK 1.7 부터는 concurrent package를 통해 ConcurrentHashMap이라는 구현체를 제공한다. 
+    => 기본적으로는 Collections라는 util 클래스에서 제공되는 static 메소드를 통해 이를 해결할 수 있다. 
+    
+    Collections.synchroziedList(), Collections.synchroziedSet(), Collections.synchroziedMap() 등이 존재한다. 
+    
+    JDK 1.7 부터는 concurrent package를 통해 ConcurrentHashMap이라는 구현체를 제공한다. 
     
     Collections util 을 사용하는 것보다 synchronized 키워드가 적용된 범위가 좁아서 보다 좋은 성능을 낼 수 있는 자료구조이다.
 
@@ -117,10 +122,13 @@ KimJunJin님의 면접에 나왔던 질문의 답을 찾아서 정리 했습니�
 11. 컬렉션 프레임워크에 대해 설명하시오
 
     => DataStructure 를 직접 구현하지 않고 사용할 수 있는 것이며, 
+    
     배열과는 다르게 객체를 보관하기 위한 공간을 미리 정하지 않아도 되므로, 
+    
     상황에 따라 객체의 수를 동적으로 정할 수 있음으로서 프로그램의 공간적인 효율성 또한 높여준다.
 
     List :  List 인터페이스를 직접 @Override를 통해 사용자가 정의하여 사용할 수도 있으며, 
+    
             대표적인 구현체로는 ArrayList가 존재하며, 이는 기존에 있었던 Vector를 개선한 것이다. 
             
             이외에도 LinkedList 등의 구현체가 존재한다.
@@ -142,6 +150,7 @@ KimJunJin님의 면접에 나왔던 질문의 답을 찾아서 정리 했습니�
     Stack 과 Queue
     
     Stack 객체는 직접 new 키워드로 사용할 수 있으며, 
+    
     Queue 인터페이스는 JDK 1.5 부터 LinkedList 객체를 통해 new 키워드를 통해 사용할 수 있다. 
     
     출처 : https://github.com/JaeYeopHan/Interview_Question_for_Beginner/tree/master/Development_common_sense
@@ -204,6 +213,7 @@ KimJunJin님의 면접에 나왔던 질문의 답을 찾아서 정리 했습니�
     캡슐화(encapsulation)
     
     => 메소드의 기능만 알며, 어떻게 동작하는지는 알필요 없이 사용하는 것
+    
     외부에서 변경 불가하게 private로 선언하고 setter getter 메소드를 통해서만 접근 가능하다.
     
     => 무결성을 보장한다.
@@ -221,6 +231,7 @@ KimJunJin님의 면접에 나왔던 질문의 답을 찾아서 정리 했습니�
 18. new String()과 ""의 차이에 대해 설명해주세요.
 
     => new String()은 heap내의 spring pool에 객체 생성 뒤 그 객체의 주소를 가지게 되는것 
+    
     ""는 문자열 자체를 저장 후 그 배열의 인덱스 번호를 가리킴 
     
     추가 : 상수풀 https://github.com/devetude/Java-Interview-QnA
@@ -228,6 +239,7 @@ KimJunJin님의 면접에 나왔던 질문의 답을 찾아서 정리 했습니�
 19. 스프링 IOC가 무엇인가요? (보충))
 
     IOC란 제어의 역전으로, 제어권을 스프링에게 위임하여 스프링이 만들어둔 객체를 주입한다
+    
     스프링이 모든 의존성 객체를 스프링이 실행될 때 만들어두고 필요한곳에 주입시켜준다. 
     
     그래서 bean 들은 싱글턴 패턴의 특징을 가진다.
@@ -243,6 +255,7 @@ KimJunJin님의 면접에 나왔던 질문의 답을 찾아서 정리 했습니�
 20. OOP와 AOP에 대한 차이를 설명해주세요.
 
     OOP : 모든 데이터를 오브젝트로 취급하여 프로그래밍 하는 방법, 
+    
     독립적으로 사용하거나 부품으로 사용하므로 재사용성 및 결합 가능
     
         특징
@@ -293,7 +306,7 @@ KimJunJin님의 면접에 나왔던 질문의 답을 찾아서 정리 했습니�
     
     => 사이드 이펙트(무언가를 행할때 발생) 제어하기, private 변수 생성하기 목적으로 사용
     
-참고: https://medium.com/@khwsc1/%EB%B2%88%EC%97%AD-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%8A%A4%EC%BD%94%ED%94%84%EC%99%80-%ED%81%B4%EB%A1%9C%EC%A0%80-javascript-scope-and-closures-8d402c976d19
+[참고링크](https://medium.com/@khwsc1/%EB%B2%88%EC%97%AD-%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%8A%A4%EC%BD%94%ED%94%84%EC%99%80-%ED%81%B4%EB%A1%9C%EC%A0%80-javascript-scope-and-closures-8d402c976d19)
 
 2. 변수스코프체인에 대해 아시나요?
 
@@ -301,7 +314,7 @@ KimJunJin님의 면접에 나왔던 질문의 답을 찾아서 정리 했습니�
     
     => 유효범위, 전역과 지역이 있다.
     
-    참고 : http://www.nextree.co.kr/p7363/
+    [참고링크](http://www.nextree.co.kr/p7363/)
 
 3. 전역변수를 함수 내부에서 사용하면 성능상 이슈가 발생하는데 그 이유와 해결책에 대해 설명해주세요.
 
@@ -325,11 +338,10 @@ KimJunJin님의 면접에 나왔던 질문의 답을 찾아서 정리 했습니�
     
     => 함수 선언문 방식만 호이스팅 가능 
 
-6. 자바스크립트 OOP
+6. [자바스크립트 OOP](https://developer.mozilla.org/ko/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript
+)
 
-    => https://developer.mozilla.org/ko/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript
-
---Network
+## Network
 
 1. 데드락에 대해서 설명하시오.
 
@@ -343,7 +355,7 @@ KimJunJin님의 면접에 나왔던 질문의 답을 찾아서 정리 했습니�
         
         순환대기(Circular wait) : 각 프로세스는 순환적으로 다음 프로세스가 요구하는 자원을 가지고 있다.
         
-    출처 : https://blog.lael.be/post/1304
+    [출처링크](https://blog.lael.be/post/1304)
 
 3. 멀티 스레드 환경에서의 주의사항을 설명해주세요.
 
@@ -354,6 +366,7 @@ KimJunJin님의 면접에 나왔던 질문의 답을 찾아서 정리 했습니�
 4. 사용자 수준 스레드와 커널 수준 스레드의 차이를 설명해주세요.
 
 ## DB
+
 1. 디비 풀은 왜 쓰나요?
 
     => 빠른 할당을 위해
@@ -387,9 +400,7 @@ KimJunJin님의 면접에 나왔던 질문의 답을 찾아서 정리 했습니�
     
     장단점 : https://lalwr.blogspot.com/2016/02/db-index.html (보충)
 
-6. 몽고DB의 특성에 대해 설명해주세요.
-
-    => http://dev.youngkyu.kr/22
+6. [몽고DB의 특성에 대해 설명해주세요.](http://dev.youngkyu.kr/22)
 
 7. SQL Injection은 무엇인가요?
 
@@ -407,9 +418,10 @@ KimJunJin님의 면접에 나왔던 질문의 답을 찾아서 정리 했습니�
         
         제3정규형(3NF) : 비주키 속성 간에 발생하는 함수적 종속(이전종속)이 발생하면 3차 정규형의 대상이 된다.
         
-    출처: http://myeonguni.tistory.com/m/1496
+    [출처](http://myeonguni.tistory.com/m/1496)
 
 10. DB Nomalization(정규화)의 목적은?
+
     저장 공간 최소화
     
     데이터 무결성 유지
@@ -433,7 +445,7 @@ KimJunJin님의 면접에 나왔던 질문의 답을 찾아서 정리 했습니�
     
     브라우저는 서버가 보낸 HTML 내용을 표시
     
-    => 출처 : http://owlgwang.tistory.com/1
+    => [출처](http://owlgwang.tistory.com/1)
 
 2. Serialize와 json의 상관관계에 대해 설명하시오.
 
@@ -449,13 +461,11 @@ KimJunJin님의 면접에 나왔던 질문의 답을 찾아서 정리 했습니�
     
     => 프로그램 성능저하 방지 및 다수의 사용자 요청 처리를 위해 사용
     
-    추가: http://limkydev.tistory.com/55
+    [추가](http://limkydev.tistory.com/55)
 
 4. Serialize로 데이터를 통신할 때 문제점에 대해 설명하시오.
 
-5. call by value와 call by reference의 차이에 대해 설명하시오.
-
-    => https://github.com/devetude/Java-Interview-QnA#q17-%EC%9E%90%EB%B0%94%EC%9D%98-call-by-value-call-by-reference%EC%97%90-%EB%8C%80%ED%95%B4%EC%84%9C-%EC%98%88%EB%A5%BC-%EB%93%A4%EC%96%B4-%EC%84%A4%EB%AA%85%ED%95%98%EC%8B%9C%EC%98%A4
+5. [call by value와 call by reference의 차이에 대해 설명하시오.](https://github.com/devetude/Java-Interview-QnA#q17-%EC%9E%90%EB%B0%94%EC%9D%98-call-by-value-call-by-reference%EC%97%90-%EB%8C%80%ED%95%B4%EC%84%9C-%EC%98%88%EB%A5%BC-%EB%93%A4%EC%96%B4-%EC%84%A4%EB%AA%85%ED%95%98%EC%8B%9C%EC%98%A4)
 
 6. 개방폐쇄 원칙에 대해 구체적으로 설명해보시오.
 
@@ -506,12 +516,11 @@ KimJunJin님의 면접에 나왔던 질문의 답을 찾아서 정리 했습니�
     
 2. React
 
-3. Redux란?
+3. [Redux란?](https://voidsatisfaction.github.io/2017/02/24/what-is-redux/)
 
     => 어플리케이션 클라이언트 쪽 state를 관리하기위한 거대한 이벤트 루프
     
     액션 = 이벤트, 리듀서 = 이벤트에 대한 반응
     
-    출처: https://voidsatisfaction.github.io/2017/02/24/what-is-redux/
     
 출처를 적었지만 혹시 문제가 될 경우 삭제하겠습니다🙇

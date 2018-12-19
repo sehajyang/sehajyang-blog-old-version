@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [Java]두개의 리스트의 아이템을 비교해 추가 삭제
+title: 두개의 리스트의 아이템을 비교해 추가 삭제
 tags: [java]
 ---
 

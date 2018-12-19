@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 두개의 리스트의 아이템을 비교해 추가 삭제
+title: 두개의 리스트 아이템을 비교해 추가,삭제
 tags: [java]
 ---
 
@@ -9,8 +9,8 @@ tags: [java]
 최근 두개의 ArrayList의 아이템을 비교해, 추가되는 아이템과 삭제되는 아이템을 구분할 필요가 있어서 만들었다.
 
 #### 가정
-list1 = [a, b, c, d] =>새로 받아온 ArrayList
-list2 = [a, b, e] => 기존 DB 있던 Data를 담은 ArrayList
+* list1 = [a, b, c, d] =>새로 받아온 ArrayList
+* list2 = [a, b, e] => 기존 DB 있던 Data를 담은 ArrayList
 
 ~~~java
 ArrayList<String> resultList = compageAndDel(list1, list2);

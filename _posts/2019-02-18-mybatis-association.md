@@ -60,6 +60,7 @@ ShopMapper.xml
 ~~~
 
 ### Result
-> Shop[(shopno=1, id=aa, pwd=1234 shopDetail=shopDetail(shopno=1, name=김뭐뭐, price=1000, count=100))]
-
+~~~bash
+Shop[(shopno=1, id=aa, pwd=1234 shopDetail=shopDetail(shopno=1, name=김뭐뭐, price=1000, count=100))]
+~~~
 

@@ -64,3 +64,4 @@ ShopMapper.xml
 Shop[(shopno=1, id=aa, pwd=1234, shopDetail=shopDetail(shopno=1, name=김뭐뭐, price=1000, count=100))]
 ~~~
 
+* association, result map collection 등으로 검색하면 더 자세히 알 수 있습니다.

@@ -11,9 +11,11 @@ tags: [aboutme]
 https://about.me/sehajyang
 ## Seha
 
-Junior Web Developer
+Junior Developer
 
 넓고 얕은 지식 확장중인 뉴비개발자
+
+새로운거 배우는걸 좋아합니다
 
 욕심내되 꾸준히 하자는 모토를 갖고있습니다 :D
 
@@ -24,36 +26,34 @@ Junior Web Developer
 
 Java
 
-JavaScript / Node.js
+JavaScript / Node.js / React.js
 
-Spring
+Spring / Springboot
 
-Docker / AWS
+AWS
 
 Linux 
 
 MySQL / Oracle
 
-Eclipse / Atom / VS Code / Vim
+MongoDB / DynamoDB
+
+Intelli J / Eclipse / VS Code / Vim
 
 
 ## Learning
 
-Unmanaged languages (C) / Python
-
-React / React-Native / TypeScript
-
-MongoDB
-
+Python / TDD 
 
 ## Interesting
 
-Vue.js 
+DevOps / Serverless / Typescript
 
-Openstack / Docker
+## Work Experience
 
+2018.11 ~ Now / Herren's Backend Developer
 
-## Seminar || Meetup
+## Activities
 
 * 180628 [OpenInfra Days Korea 2018](https://www.openinfradays.kr/)
 
@@ -73,7 +73,11 @@ Openstack / Docker
 
 * 180920 [[T academy]스프링부트를 이용한 웹 서비스 개발하기](https://tacademy.skplanet.com/front/tacademy/courseinfo/campus.action)
 
+* 181006 [Dev Django Korea 2018](https://festa.io/events/86)
+
+
 ## Contact
+
 [Mail](mailto:sehajyang@gmail.com)
 
 [Blog](https://sehajyang.github.io/)

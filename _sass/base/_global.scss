@@ -30,7 +30,7 @@ html {
 body {
     color: $text-color;
     font-family: $font-family-main;
-    font-size: 1.1em;
+    font-size: 1em;
     word-wrap: break-word;
 }
 
@@ -113,8 +113,8 @@ ol,
 ul,
 dl,
 .math-display {
-    line-height: 1.5;
-    margin-bottom: 1em;
+    line-height: 1.7;
+    margin-bottom: 20px;
 }
 
 // KaTeX math display

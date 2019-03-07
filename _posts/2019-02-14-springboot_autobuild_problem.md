@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Springboot auto build 안되는 문제
+categories : [Java]
 tags: [tip]
 ---
 

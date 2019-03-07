@@ -1,30 +1,25 @@
 ---
 layout: page
 title: About Me
-permalink: /about/
-feature-img: "assets/img/pexels/computer2.jpeg"
-tags: [aboutme]
+feature-img: "assets/img/pexels/circuit.jpeg"
 ---
-
 [![StackShare](https://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/sehajyang/my-stack)
 # About Me
-https://about.me/sehajyang
+[https://about.me/sehajyang](https://about.me/sehajyang)
 ## Seha
 
 Junior Developer
 
-넓고 얕은 지식 확장중인 뉴비개발자
+넓고 얕은 지식 확장중인 주니어 개발자
 
 새로운거 배우는걸 좋아합니다
 
 욕심내되 꾸준히 하자는 모토를 갖고있습니다 :D
 
-[기술스택은 이쪽:point_left:](https://stackshare.io/sehajyang/my-stack)
-
 
 ## Skill Set
 
-Java
+Java / Python
 
 JavaScript / Node.js / React.js
 
@@ -32,22 +27,22 @@ Spring / Springboot
 
 AWS
 
+Jenkins
+
 Linux 
 
-MySQL / Oracle
+MySQL / Oracle / MongoDB
 
-MongoDB / DynamoDB
-
-Intelli J / Eclipse / VS Code / Vim
+Intelli J / Eclipse / Atom / VS Code / Vim
 
 
 ## Learning
 
-Python / TDD 
+Kotlin / React.js / TDD
 
 ## Interesting
 
-DevOps / Serverless / Typescript
+DevOps / Serverless
 
 ## Work Experience
 
@@ -74,6 +69,8 @@ DevOps / Serverless / Typescript
 * 180920 [[T academy]스프링부트를 이용한 웹 서비스 개발하기](https://tacademy.skplanet.com/front/tacademy/courseinfo/campus.action)
 
 * 181006 [Dev Django Korea 2018](https://festa.io/events/86)
+
+* 190223 [KCD(Korea Community Day) 2019](https://kcd2019.festa.io/)
 
 
 ## Contact

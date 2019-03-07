@@ -2,7 +2,7 @@
 layout: post
 title: mybatis association
 tags: [tip, mybatis, spring] 
-category : tip
+categories : [Java]
 comments: true
 ---
 # mybatis association

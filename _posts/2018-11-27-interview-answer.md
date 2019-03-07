@@ -1,3 +1,11 @@
+---
+layout: post
+title: Interview Answer
+comments: true
+categories : [Etc]
+tags: [studylog, daily]
+---
+
 # 면접 준비하면서 정리했던 것
 
 KimJunJin님의 면접에 나왔던 질문의 답을 찾아서 정리 했습니다. 

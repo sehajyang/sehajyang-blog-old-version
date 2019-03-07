@@ -1,24 +1,24 @@
 # SITE CONFIGURATION
 baseurl: ""
 url: "https://sehajyang.github.io"
-title: "Seha github Blog"
+title: "Seha 개발 기록 블로그"
 description: "Seha's Blog" # used by search engines
 
 
 # THEME-SPECIFIC CONFIGURATION
 theme_settings:
   # Meta
-  title: "Seha 기록 블로그"
+  title: "Seha 개발 기록 블로그"
   avatar: assets/img/triangle.svg
   favicon: assets/favicon.ico
   gravatar: # Email MD5 hash
 
   # Header and footer text
   header_text: > #two or three lines to describe your site
-     <p>Seha 개발 관련 기록 블로그</p>
+     <h2>Seha 개발 기록 블로그</h2>
   header_text_feature_image: assets/img/pexels/computer.jpeg
   footer_text: >
-   Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sehajyang/Type-on-Strap">Type on Strap</a>
+   Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
 
   # Icons
   rss: true  # Make sure you created a feed.xml with feed.xml layout
@@ -92,7 +92,9 @@ theme_settings:
 
   # Post navigation
   post_navigation: true
-  
+  navigation:
+     - title: Categories
+     url: /category
   
 # PAGINATION
 paginate: 5

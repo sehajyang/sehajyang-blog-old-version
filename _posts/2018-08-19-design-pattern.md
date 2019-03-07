@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Design Pattern 정리
-category : study
+categories : [Etc]
+comments: true
 tags: [study]
 ---
 

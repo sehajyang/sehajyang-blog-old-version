@@ -2,6 +2,7 @@
 layout: post
 title: Open infra day 참석 후기
 tags: [seminar]
+categories : [Seminar]
 comments: true
 ---
 # Open infra day 2018 in Seoul

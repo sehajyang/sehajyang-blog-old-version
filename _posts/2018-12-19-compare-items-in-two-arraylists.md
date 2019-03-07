@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 두개의 리스트 아이템을 비교해 추가,삭제
+categories : [Java]
+comments: true
 tags: [java]
 ---
 

@@ -7,8 +7,6 @@ categories : [Seminar]
 tags: seminar
 ---
 
-# Okky 오픈소스 세미나 오픈소스, 줘도 못 먹나 - 오픈소스로 팀의 개발 생산성 높이기
-
 ![oss_0]({{ "/assets/img/blogpost/oss_0.jpg"}})
 
 Okky 창시자이신 허광남(kenu)님이 오픈소스 세미나를 하신다는 글을 Okky에서 보게됐다.

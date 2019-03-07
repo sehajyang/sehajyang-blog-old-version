@@ -6,8 +6,6 @@ comments: true
 tags: [study]
 ---
 
-# Design Pattern
-
 ### 종류
 
 ##### 1 – [Iterator](#iterator-pattern)

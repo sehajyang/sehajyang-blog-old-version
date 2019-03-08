@@ -5,6 +5,8 @@ tags: [devOps]
 ---
 
 부제 : 젠킨스 뉴비의 젠킨스 도입기
+* TOC
+{:toc}
 
 ### 구축 환경
 OS : ubuntu  
@@ -26,12 +28,6 @@ jenkins가 빌드 후 서버에 배포
 빌드 시작 및 결과는 slack 으로 알림  
 
 ### 발생한 문제
-0. 인증문제
-1. Webhook 문제
-2. 회사 아이피가 아닌 타 아이피로 인한 접근문제
-2. ssh 전송 path 문제 (자꾸 파일이 사라짐, transfer가 안됨) ★★★
-3. tomcat 문제
-
 
 #### GitLab 인증문제
 사내 프로젝트는 당연히 private repo로 되어있다.  
@@ -45,13 +41,13 @@ jenkins가 빌드 후 서버에 배포
 
 물론 뉴비인 나는 아무것도 모르고 세가지 다 해봤다(삽질의 시작)
 
-#### 1. rsa 키페어를 만들어서 사용
+##### 1. rsa 키페어를 만들어서 사용
 [이 분의 블로그](https://taetaetae.github.io/2018/02/08/github-with-jenkins/)를 참고해서 했다. 
 문제없이 잘 생성해서 잘 인증받을 수 있었다.
 
-#### 2. gitlab의 access token을 받아서 사용
+##### 2. gitlab의 access token을 받아서 사용
 
-#### 3. gitlab 계정 인증을 사용
+##### 3. gitlab 계정 인증을 사용
 
 
 #### Webhook 문제

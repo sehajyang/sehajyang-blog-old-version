@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Design Pattern 정리
-categories : [Devtips]
+categories : [DevTips]
 comments: true
 tags: [study]
 ---

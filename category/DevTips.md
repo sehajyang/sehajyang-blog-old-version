@@ -1,5 +1,6 @@
 ---
 layout: category
-title: Etc
+title: DevTips
 feature-img: "assets/img/pexels/desk-open.jpeg"
 ---
+

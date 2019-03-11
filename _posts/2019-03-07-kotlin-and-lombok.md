@@ -3,7 +3,7 @@ layout: post
 title: Kotlin 에서 Lombok을 사용할 수 없는 문제
 categories : [Etc]
 comments: true
-tags: [Devtips]
+tags: [DevTips]
 ---
 최근 자바 스프링부트로 되어있는 사내 프로젝트에 Kotlin을 일부분 도입하려다 대차게 실패했다.  
 사내 프로젝트에 Lombok을 사용하고 있었는데, Kotlin이 Lombok을 사용한 Bean Class에 접근하지 못하는 것 이었다.

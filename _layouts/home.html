@@ -49,6 +49,18 @@ layout: default
       {{ site.theme_settings.str_previous_page }}
     </a>
     {% endif %}
+    {% if paginator.page == 1 %}
+    <span class="button" style="background-color:#337ab7; color:white">1</span>
+    {% else %}
+    <a href="/" class="button">1</a>
+    {% endif %}
+    {% for count in (2..paginator.total_pages) %}
+      {% if count == paginator.page %}
+      <span class="button" style="background-color:#337ab7; color:white">{{ count }}</span>
+      {% else %}
+      <a href="/blog/page{{ count }}" class="button">{{ count }}</a>
+      {% endif %}
+    {% endfor %}
     {% if paginator.next_page %}
     <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="button" >
       {{ site.theme_settings.str_next_page }}

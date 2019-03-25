@@ -15,7 +15,7 @@ theme_settings:
 
   # Header and footer text
   header_text: > #two or three lines to describe your site
-     <h1>Seha 개발 기록 블로그</h1>
+     <h2>Seha 개발 기록 블로그</h2>
   header_text_feature_image: assets/img/pexels/computer.jpeg
   footer_text: >
    Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>

@@ -16,7 +16,7 @@ theme_settings:
   # Header and footer text
   header_text: > #two or three lines to describe your site
      <h2>Seha 개발 기록 블로그</h2>
-  header_text_feature_image: assets/img/pexels/computer.jpeg
+  header_text_feature_image: assets/img/pexels/triangular.jpeg
   footer_text: >
    Powered by <a href="https://jekyllrb.com/">Jekyll</a> with <a href="https://github.com/sylhare/Type-on-Strap">Type on Strap</a>
 
@@ -33,7 +33,7 @@ theme_settings:
   google_plus:
   instagram:
   keybase:
-  linkedin: "linkedin.com/in/yun-jay-09b834165"
+  linkedin: "yun-jay-09b834165"
   pinterest:
   reddit:
   soundcloud:

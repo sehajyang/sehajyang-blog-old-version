@@ -20,7 +20,9 @@ layout: default
   </section>
   
   <!-- Social media shares -->
+  {% if page.share %}
   {% include share_buttons.html %}
+  {% endif %}
    
    <!-- Tag list -->
   {% capture tag_list %}{{ page.tags | join: "|"}}{% endcapture %}

@@ -1,5 +1,4 @@
 ---
-layout: category
+layout: categories
 title: Seminar
-feature-img: "assets/img/pexels/desk-open.jpeg"
 ---

@@ -1,5 +1,4 @@
 ---
-layout: category
+layout: categories
 title: Java
-feature-img: "assets/img/pexels/desk-open.jpeg"
 ---

@@ -1,40 +1,25 @@
 ---
 layout: page
 title: About Me
-feature-img: "assets/img/pexels/circuit.jpeg"
 ---
-[![StackShare](https://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/sehajyang/my-stack)
-# About Me
-[https://about.me/sehajyang](https://about.me/sehajyang)
-## Seha
 
-Junior Developer
+## Seha 
+**Junior Developer**  
+넓고 얕은 지식 확장중인 주니어 개발자    
+새로운거 배우는걸 좋아합니다.  
 
-넓고 얕은 지식 확장중인 주니어 개발자
-
-새로운거 배우는걸 좋아합니다
-
-욕심내되 꾸준히 하자는 모토를 갖고있습니다 :D
-
+[about me](https://about.me/sehajyang),[StackShare](https://stackshare.io/sehajyang/my-stack)
 
 ## Skill Set
 
-Java / Python
-
-JavaScript / Node.js / React.js
-
-Spring / Springboot
-
-AWS
-
-Jenkins
-
-Linux 
-
-MySQL / Oracle / MongoDB
-
-Intelli J / Eclipse / Atom / VS Code / Vim
-
+Java / Python    
+JavaScript / Node.js / React.js  
+Spring / Springboot  
+AWS  
+Jenkins  
+Linux   
+MySQL / Oracle / MongoDB  
+Intelli J / Eclipse / Atom / VS Code / Vim  
 
 ## Learning
 
@@ -75,11 +60,9 @@ DevOps / Serverless
 
 ## Contact
 
-[Mail](mailto:sehajyang@gmail.com)
-
-[Blog](https://sehajyang.github.io/)
-
-[Twitter](https://twitter.com/sehajyang)
+[Mail](mailto:sehajyang@gmail.com)  
+[Blog](https://sehajyang.github.io/)  
+[Twitter](https://twitter.com/sehajyang)  
 
 
 

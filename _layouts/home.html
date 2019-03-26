@@ -29,13 +29,15 @@ layout: default
               {{ post.date | date: "%B %-d, %Y" }}
             </p>
           </header>
-          <!-- <div class="excerpt">
+          <div class="excerpt">
               {{ post.excerpt | strip_html | escape }}
-            {{ post.content | strip_html | truncate: "250" }}
-            <a class="button" href="{{ post.url | prepend: site.baseurl }}">
-              {{ site.theme_settings.str_continue_reading }}
+            <!-- {{ post.content | strip_html | truncate: "10" }} -->
+            <p>
+            <a class="button" style="padding:0.1em 0.6em;" href="{{ post.url | prepend: site.baseurl }}">
+              more
             </a>
-          </div> -->
+          </p>
+          </div>
       </span>
     </div>
     {% endfor %}

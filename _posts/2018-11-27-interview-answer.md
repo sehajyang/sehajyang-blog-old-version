@@ -2,7 +2,7 @@
 layout: post
 title: Interview Answer
 comments: true
-categories : [DevTips]
+categories : [Devtips]
 tags: [studylog, daily]
 ---
 

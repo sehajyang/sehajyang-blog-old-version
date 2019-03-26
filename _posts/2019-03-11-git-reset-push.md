@@ -1,7 +1,7 @@
 ---
 layout: post
 title: gitlab에 이미 push된 commit 삭제
-categories : [DevTips]
+categories : [Devtips]
 comments: true
 tags: [git]
 ---

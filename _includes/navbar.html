@@ -22,20 +22,28 @@
         <!-- Auto Generation of NORMAL pages in the navbar -->
         {% assign name_page = "" %}
         
-        {% for page in site.pages %}
+        <!-- {% for page in site.pages %}
         {% if page.title and page.hide != true %}
         {% if name_page contains page.title %}
         {% else %}
-        <li class="separator"> | </li>
-        <li>
-            <a class="clear" href="{{ page.url | relative_url }}">
-                {{ page.title }}
-            </a>
-        </li>
+        
         {% endif %}
         {% assign name_page = page.title | append: name_page %}
         {% endif %}
-        {% endfor %} 
+        {% endfor %}  -->
+
+        <li class="separator"> | </li>
+        <li>
+            <a class="clear" href="{{ site.url }}{{ site.baseurl }}/pages/category.html">
+                Category
+            </a>
+        </li>
+        <li class="separator"> | </li>
+        <li>
+            <a class="clear" href="{{ site.url }}{{ site.baseurl }}/pages/about.html">
+                About me
+            </a>
+        </li>
         
         <!-- Auto Generation of SPECIAL pages in the navbar -->
         {% for item in site.theme_settings.special_page %}
@@ -44,6 +52,7 @@
             <li>
                 <a class="clear" href="{{ site.url }}{{ site.baseurl }}/{{ item[1].icon }}">
                     <i class="fa fa-{{ item[1].icon }}" aria-hidden="true"></i>
+                    {{ item[1].icon }}
                 </a>
             </li>
           {% endif %}

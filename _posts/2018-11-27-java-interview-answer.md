@@ -1,8 +1,8 @@
 ---
 layout: post
-title: Interview Answer
+title: Java Interview Answer
 comments: true
-categories : [Devtips]
+categories : [Java]
 tags: [studylog, daily]
 ---
 

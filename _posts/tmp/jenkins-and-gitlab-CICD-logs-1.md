@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Gitlab 과 Jenkins 연동한 배포 자동화
-tags: [devOps]
 ---
 
 부제 : DevOps 뉴비의 젠킨스 도입기

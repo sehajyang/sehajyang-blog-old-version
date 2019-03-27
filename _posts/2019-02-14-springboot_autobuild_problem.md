@@ -2,7 +2,7 @@
 layout: post
 title: Springboot auto build 안되는 문제
 categories : [Java]
-tags: [tip]
+tags: [Java]
 ---
 
 최근 Eclipse에서 Intelli J로 갈아탔는데 java 파일 수정시 auto build가 되지 않는 문제가 발생했다.

@@ -1,4 +1,4 @@
 ---
 layout: categories
-title: Devops
+title: DevOps
 ---

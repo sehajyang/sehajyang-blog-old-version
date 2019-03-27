@@ -5,10 +5,9 @@ title: About Me
 
 ## Seha 
 **Junior Developer**  
+[about me](https://about.me/sehajyang),[Github](https://github.com/sehajyang),[StackShare](https://stackshare.io/sehajyang/my-stack)  
 넓고 얕은 지식 확장중인 주니어 개발자    
-새로운거 배우는걸 좋아합니다.  
-
-[about me](https://about.me/sehajyang),[StackShare](https://stackshare.io/sehajyang/my-stack)
+새로운 걸 배우는 것을 좋아합니다.  
 
 ## Skill Set
 
@@ -23,7 +22,7 @@ Intelli J / Eclipse / Atom / VS Code / Vim
 
 ## Learning
 
-Kotlin / React.js / TDD
+Kotlin / TDD
 
 ## Interesting
 
@@ -56,7 +55,6 @@ DevOps / Serverless
 * 181006 [Dev Django Korea 2018](https://festa.io/events/86)
 
 * 190223 [KCD(Korea Community Day) 2019](https://kcd2019.festa.io/)
-
 
 ## Contact
 

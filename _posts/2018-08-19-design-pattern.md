@@ -6,55 +6,9 @@ comments: true
 tags: [study]
 ---
 
-### 종류
+* TOC
+{:toc}
 
-##### 1 – [Iterator](#iterator-pattern)
-
-##### 2 – [Adapter](#adapter-pattern)
-
-##### 3 - [Factory Method](#factory-method-pattern)
-
-##### 4 - [Template Method](#template-method-pattern)
-
-##### 5 – [Singleton](#singleton-pattern)
-
-##### 6 – [Strategy](#strategy-pattern)
-
-##### 7 – [Composite](#composite-pattern)
-
-##### 8 – [Decorator](#decorator-pattern)
-
-##### 9 - [Chain of Responsibility](#chain-of-responsibility-pattern)
-
-##### 10 – [Facade](#facade-pattern)
-
-##### 11 – [Observer](#observer-pattern)
-
-##### 12 – [Prototype](#prototype-pattern)
-
-##### 13 – [Flyweight](#flyweight-pattern)
-
-##### 14 – [Builder](#builder-pattern)
-
-##### 15 – [Mediator](#mediator-pattern)
-
-##### 16 – [Visitor](#visitor-pattern)
-
-##### 17 - [Command](#command-pattern)
-
-##### 18 - [State](#state-pattern)
-
-##### 19 - [Proxy](#proxy-pattern)
-
-##### 20 - [Compound](#compound-pattern)
-
-##### 21 - [Bridge](#bridge-pattern)
-
-##### 22 - [Interpreter](#interpreter-pattern)
-
-##### 23 - [Memento](#memento-pattern)
-
-<hr>
 ## 디자인 원칙(SOLID)
 
 1. Open-Closed-Principle(개방 폐쇄 원칙)

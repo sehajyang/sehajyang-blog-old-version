@@ -4,9 +4,6 @@ title: 빠르고 쉽게 AWS에 웹 어플리케이션 배포하기
 tags: [AWS]
 categories : [Devops]
 comments: true
-sitemap :
-  changefreq : daily
-  priority : 1.0
 ---
 
 ## 목차

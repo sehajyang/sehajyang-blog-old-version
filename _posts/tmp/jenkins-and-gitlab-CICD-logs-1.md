@@ -1,19 +1,20 @@
 ---
 layout: post
-title: Gitlab 과 Jenkins 연동한 배포 자동화
+title: Gitlab 과 Jenkins 연동 빌드 배포 자동화
+subtitle: DevOps 뉴비의 젠킨스 도입기
 ---
 
-부제 : DevOps 뉴비의 젠킨스 도입기
 * TOC
 {:toc}
 
 ### 구축 환경
-OS : ubuntu  
+
+>OS : ubuntu  
 WAS : tomcat8  
 JAVA : JDK 8  
 Git Web Platform : GitLab  
 AWS : EC2 t2.micro 인스턴스 사용  
-배포 프로젝트 : springboot  
+배포 프로젝트 : spring boot  
 
 ### 추가적으로 받은 젠킨스 플러그인
 * GitLab Plugin
@@ -40,17 +41,19 @@ private repository 일 경우 외부에서 접근하기 위해 인증이 필요�
 [링크](https://taetaetae.github.io/2018/02/08/github-with-jenkins/)를 참고해서 했다. 
 문제없이 잘 생성해서 잘 인증받을 수 있었다.
 
-##### 2. gitlab의 access token을 받아서 사용
+##### 2. gitlab의 Deploy key 이용
+gitlab의 jenkins와 연동하려는 프로젝트의 설정 > CI/CD > 저장소 > Deploy Key > public key 추가
+
 
 ##### 3. gitlab 계정 인증을 사용
-
+해당 레포에 접근할 수 있는 아이디와 비밀번호를 입력
 
 #### Webhook 문제
 그 뒤 gitlab webhook으로 푸쉬 요청을 받아야 되는데 404 에러가 났다.
 
 > internal error  
 
-구글링 해 보니 보통 네트워크 방화벽 문제 라고 한다.  
+보통 네트워크 방화벽 문제라고 한다.  
 jenkins server는 회사 IP만 접근 할 수 있었기 때문에 gitlab에서 push 노티를 보내도 못받는 것 이다. 그래서 8080 포트를 열고 secret token을 추가했다.    
 jenkins server 가 auth 오류를 response 했다.  
 
@@ -65,24 +68,13 @@ secret 토큰은 jenkis 생성한 프로젝트 아이템의 설정의
 여기서 generate 할 수 있다.    
 generate 한 secret token을 webhook sercret token에 넣어주면 된다.  
 그 후 webhook test 에서 push 이벤트를 발생시키니 성공적으로 빌드가 되는 걸 확인했다. 
-
-슬랙은 과거에 jenkins에 붙여본 적이 있어서 어렵지 않게 할 수 있었다.  
-(슬랙 붙인거 어쩌고저쩌고 이미지 및 설명)  
-
-
-라이브 서버에 바로 배포하는것은 무서우니 배포할 테스트 서버를 새로 만들었다.  
-배포를 위한 java와 tomcat을 설치했는데 아차 java를 아무생각없이 10을 깔아버린 것이었다.  
-부랴부랴 java10을 지우고 java8을 깔았다.  
-추후에 이게 문제가 되어 테스트 서버를 새로 만들고 java와 tomcat을 다시 설치했다.  
-
+ 
 이제 ssh로 파일을 옮길 차례였다.   
-처음엔 jenkins 서버에서 테스트 서버로 접속을 시도해봤다.  
+jenkins 서버에서 테스트 서버로 접속을 시도해봤다.  
 
 인증문제인줄 알았는데 인증문제면 permission denide 라도 떠야되는데 테스트 서버에선 아무 메세지도 보내고있지 않았다.  
 처음엔 명령어를 잘못 쓴 줄 알았다.  
-그래서 ping도 날려봤다 하지만 무응답이었다.  
-하지만 서버는 죽어있지 않고 잘 돌아가고 있었다.  
-명령어도 바꿔보고 했는데, 알고보니 private ip로 접속해야 되는 것이었다.  
+알고보니 private ip로 접속해야 되는 것이었다.  
 아무튼 private ip로 바꾸니 테스트 서버가 permission denide 메세지를 주었다.(드디어 응답을 했다)  
 ~~~
 ssh -i 키.key 테스트서버ip
@@ -120,10 +112,7 @@ remote directory path는 / 로 줬다.
 빌드 후 조치에 받은 파일을 mv로 옮기고 tomcat restart 명령을 실행했다. (모든 명령은 sudo로 진행되었다)  
 remove prefix 옵션을 주지 않으면 war 파일을 찾으러 가는 경로에있는 모든 디렉토리를 같이 보낸다.  
 
-
 빌드가 잘 되는걸 볼 수 있다.  
-
-그 외에도 읽기 쓰기 권한 문제라던가 그러한 사소한 문제가 있었지만 chmod로 적절히 조치를 취했다.  
 
 *작성중*
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 빠르고 쉽게 AWS에 웹 어플리케이션 배포하기
+parmalink: "/etc/2018/07/17/deploying-java-applications-on-aws.html"
 tags: [AWS]
 categories : [Etc]
 comments: true

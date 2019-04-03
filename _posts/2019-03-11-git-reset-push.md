@@ -1,6 +1,7 @@
 ---
 layout: post
 title: gitlab에 이미 push된 commit 삭제
+permalink: "/tip/2019/03/11/git-reset-push.html"
 categories : [Tip]
 comments: true
 tags: [git]

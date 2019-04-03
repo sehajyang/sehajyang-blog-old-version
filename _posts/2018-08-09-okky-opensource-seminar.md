@@ -4,7 +4,7 @@ subtitle: 오픈소스로 팀의 개발 생산성 높이기
 layout: post
 feature-img: "assets/img/blogpost/oss_0.jpg"
 categories : [Seminar]
-tags: seminar
+tags: [seminar]
 ---
 
 * TOC

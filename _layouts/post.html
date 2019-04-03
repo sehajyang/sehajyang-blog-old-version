@@ -8,10 +8,12 @@ layout: default
     {{ page.date | date: "%B %-d, %Y" }}
     {% if page.author %} - {{ page.author }}{% endif %}
     </p>
+    {% if page.categories %}
     <p class="meta">
     Category &nbsp;
       <a href="/category/{{ page.categories }}" style="margin-top: 95px;"><i class="fa fa-folder-open-o">{{ page.categories }}</i></a>
     </p>
+    {% endif %}
   </header>
   <section class="post-content">
   {% if page.bootstrap %}
@@ -43,21 +45,23 @@ layout: default
 {% endif %}
 
 <!-- relative post -->
-<div class="related">
-    <h3>Related Posts</h3>
+<!-- <div id="post-nav" style="padding-right:20%;padding-left:20%;">
+    <div id="related-posts" class="related">
+    <h3>read more</h3>
     {% assign firstCategory = page.categories | first %}
     {% assign relatedCount = 0 %}
     {% for related in site.categories[firstCategory] %}
         {% unless page.permalink == related.permalink %}
             {% assign relatedCount = relatedCount | plus: 1 %}
-            <a href="{{related.permalink}}">{{ related.title }}</a>
+            <a style="text-align: left;" href="{{related.permalink}}">{{ related.title }}</a> 
         {% endunless %}
 
         {% if relatedCount == 3 %}
             {% break %}
         {% endif %}
     {% endfor %}
-</div>
+    </div> 
+</div> -->
 
 <!-- Post navigation -->
 {% if site.theme_settings.post_navigation %}

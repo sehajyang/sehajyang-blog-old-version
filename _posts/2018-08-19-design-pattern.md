@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Design Pattern 정리
+parmalink: "/etc/2018/08/19/design-pattern.html"
 categories : [Etc]
 comments: true
 tags: [study]

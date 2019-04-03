@@ -34,7 +34,7 @@
 
         <li class="separator"> | </li>
         <li>
-            <a class="clear" href="{{ site.url }}{{ site.baseurl }}/pages/category.html">
+            <a class="clear" id="category" href="{{ site.url }}{{ site.baseurl }}/pages/category.html">
                 <i class="fa fa-folder-open" aria-hidden="true"></i>
                 Category
             </a>
@@ -62,4 +62,13 @@
     </ul>
         
 	</nav>
+	<script>
+		document.getElementById('category').addEventListener('click', (event) => {
+			var hText = '';
+			{% for category in categories_list %}
+				hText += <a class = "button" href="{{ site.url }}{{ site.baseurl }}/category/{{ category[0] | capitalize }}.html">{{ category[0] | capitalize }} ({{ category[1].size }})</a></li>
+			{% endfor %}
+			document.getElementById('category').appendChild(document.createElement(hText))
+		});
+	</script>
 </header>

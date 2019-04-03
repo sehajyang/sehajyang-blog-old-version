@@ -49,6 +49,12 @@
         margin-bottom: 0;
         display: inline-block;
         background-size: $feature-image-size;
+        @media (max-width: 1000px) {
+            padding: $padding-small * 1.5 $padding-large / 1.6;
+        }
+        @media (max-width: 576px) {
+            padding: $padding-small;
+        }
         p a {
             @extend .body-link;
         }

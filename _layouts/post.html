@@ -8,8 +8,11 @@ layout: default
     {{ page.date | date: "%B %-d, %Y" }}
     {% if page.author %} - {{ page.author }}{% endif %}
     </p>
+    <p class="meta">
+    Category &nbsp;
+      <a href="/category/{{ page.categories }}" style="margin-top: 95px;"><i class="fa fa-folder-open-o">{{ page.categories }}</i></a>
+    </p>
   </header>
-   <a href="/category/{{ page.categories }}">{{ page.categories }}</a>
   <section class="post-content">
   {% if page.bootstrap %}
   <div class="bootstrap-iso">

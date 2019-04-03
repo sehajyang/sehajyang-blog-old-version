@@ -62,13 +62,4 @@
     </ul>
         
 	</nav>
-	<script>
-		document.getElementById('category').addEventListener('click', (event) => {
-			var hText = '';
-			{% for category in categories_list %}
-				hText += <a class = "button" href="{{ site.url }}{{ site.baseurl }}/category/{{ category[0] | capitalize }}.html">{{ category[0] | capitalize }} ({{ category[1].size }})</a></li>
-			{% endfor %}
-			document.getElementById('category').appendChild(document.createElement(hText))
-		});
-	</script>
 </header>

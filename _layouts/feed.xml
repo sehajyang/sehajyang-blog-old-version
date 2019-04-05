@@ -9,7 +9,7 @@
         {% for post in site.posts limit:15 %}
         <item>
             <title>{{ post.title | xml_escape }}</title>
-            <link>{{ site.url }}{{ site.baseurl }}/{{ post.url | relative_url }}</link>
+            <link>{{ site.url }}{{ site.baseurl }}{{ post.url | relative_url }}</link>
             <guid isPermaLink="true">{{ post.url | relative_url }}</guid>
             <description>{{ post.content | xml_escape }}</description>
             <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>

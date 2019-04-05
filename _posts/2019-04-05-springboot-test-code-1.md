@@ -7,8 +7,8 @@ comments: true
 ---
 >#### Springboot 에서 test code 작성하기 시리즈
 * [Springboot 에서 test code 작성하기 1편 - 통합테스트(MVC)]()
-* Springboot 에서 test code 작성하기 2편 - 단위테스트(Service) 추후 작성
-* Springboot 에서 test code 작성하기 3편 - 그 외(Spock) 추후 작성
+* Springboot 에서 test code 작성하기 2편 - 단위테스트(Service)
+* Springboot 에서 test code 작성하기 3편 - assetThat이 중복되는 테스트와 Spock
 
 최근 사내 프로젝트에 테스트 코드를 작성할 기회가 있었다.
 컨트롤러는 운영 환경과 비슷하게 테스트 하기 위해 통합 테스트, 서비스는 의존성을 줄이고 해당 서비스의 목표에만 집중하기 위해 단위테스트를 하기로 결정했다.  

@@ -10,7 +10,7 @@ comments: true
 * Springboot 에서 test code 작성하기 2편 - 단위테스트(Service)
 * [Springboot 에서 test code 작성하기 3편 - assetThat이 중복되는 테스트와 Spock](https://sehajyang.github.io/java/2019/04/05/springboot-test-code-3.html)
 
-최근 사내 프로젝트에 테스트 코드를 작성할 기회가 있었다.
+최근 사내 프로젝트에 테스트 코드를 작성할 기회가 있었다.  
 컨트롤러는 운영 환경과 비슷하게 테스트 하기 위해 통합 테스트, 서비스는 의존성을 줄이고 해당 서비스의 목표에만 집중하기 위해 단위테스트를 하기로 결정했다.  
 목표는 해당 컨트롤러의 메소드가 잘 동작하는지(요청을 잘 보내고 예상한 응답을 잘 받는지), 서비스가 개별적으로 잘 동작하는지 확인하는 것 이다.  
 
@@ -91,7 +91,7 @@ public class CustomerController {
         int result;                        
         int userExist = shopService.getCustomerByCustno(customer.getCustno(1));
 
-        if(userExist != 1){
+        if(userExist < 1){
             return Constant.RESULT_FAIL;
         }else{
             result = shopService.regCustomerData(customer);

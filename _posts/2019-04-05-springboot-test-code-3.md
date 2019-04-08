@@ -12,8 +12,8 @@ comments: true
 * [Springboot 에서 test code 작성하기 3편 - assetThat이 중복되는 테스트와 Spock](https://sehajyang.github.io/java/2019/04/05/springboot-test-code-3.html)
 
 ### 1. 그 외의 메소드 테스트와 Spock
-프로덕션엔 CommonUtil이라는 클래스가 있다. 그 클래스엔 문자열을 조작한다던가, 리스트를 조작하거나 어떠한 값을 검증하는 등의 메소스들이 있는데  
-그 클래스 내의 메소드들이 잘 동작하는지 테스트하기 위해선 많은 assertThat 이 필요했고, 그러한 중복코드를 없애기 위해 검색을 하던 중  [Spock 소개 및 튜토리얼](https://jojoldu.tistory.com/228)라는 튜토리얼을 보게 되었다.  
+프로덕션엔 CommonUtil이라는 클래스가 있다.   
+그 클래스엔 문자열을 조작한다던가, 리스트를 조작하거나 어떠한 값을 검증하는 등의 메소스들이 있는데 그 클래스 내의 메소드들이 잘 동작하는지 테스트하기 위해선 많은 assertThat 이 필요했고, 그러한 중복코드를 없애기 위해 검색을 하던 중 [Spock 소개 및 튜토리얼](https://jojoldu.tistory.com/228)라는 튜토리얼을 보게 되었다.  
 
 >**BDD(Behaviour-Driven Development)**는 TDD가 진화한 테스트 코드 작성 방식이며  
 사람이 쉽게 이해하기 쉬운 작성, 즉 테스트의 동작 및 의도를 직관적으로 알 수 있다는 장점이 있다.  

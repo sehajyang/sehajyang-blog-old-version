@@ -7,7 +7,8 @@ title: About Me
 **Junior Developer**  
 [about me](https://about.me/sehajyang),[Github](https://github.com/sehajyang),[StackShare](https://stackshare.io/sehajyang/my-stack)  
 넓고 얕은 지식 확장중인 주니어 개발자    
-새로운 걸 배우는 것을 좋아합니다.  
+배우거나 도전하는 것을 좋아합니다. 
+최근 좋은 코드 품질에 대한 관심이 많습니다. 
 
 ## Skill Set
 

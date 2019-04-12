@@ -21,3 +21,11 @@ git push origin +브랜치명
 브랜치 명 앞에 `+`를 붙여야 한다(덮어씌운다는 의미)
 `+` 없이 push 해버리면 최근 커밋을 pull 하라며 에러가 난다. 
 
+만약 
+~~~
+ ! [remote rejected] master -> master (pre-receive hook declined)
+~~~
+이런 에러가 났다면 해당 
+>project settings > Repository > Protected Branches 
+에서 unprotected로 해당 브랜치를 설정해주면 된다 (보통 master에 걸려있음)
+

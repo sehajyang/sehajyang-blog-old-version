@@ -4,6 +4,9 @@ title: Springboot 에서 test code 작성하기 3편 - assetThat이 중복되는
 tags: [Test]
 categories : [Java]
 comments: true
+sitemap :
+  changefreq : daily
+  priority : 1.0
 ---
 
 >#### Springboot 에서 test code 작성하기 시리즈

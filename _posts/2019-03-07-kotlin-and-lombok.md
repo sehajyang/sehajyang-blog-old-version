@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Kotlin 에서 Lombok을 사용할 수 없는 문제
-parmalink: "/etc/2019/03/07/kotlin-and-lombok.html"
 categories : [Etc]
 comments: true
 share : true

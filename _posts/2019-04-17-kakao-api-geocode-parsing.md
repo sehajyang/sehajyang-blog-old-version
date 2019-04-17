@@ -6,9 +6,6 @@ categories : [Java]
 tags: [java]
 
 ---
-**Index**
->* TOC
->{:toc}
 
 Kakao Geocode API로 부터 받은 데이터를 직렬화 하고 JSON객체로 바꾸고 특정 데이터를 얻어오는 작업을 할 것입니다.  
 Kakao API를 이용하기 위해선 API Key가 필요한데, [이곳](https://developers.kakao.com) 에서 얻을 수 있습니다.  

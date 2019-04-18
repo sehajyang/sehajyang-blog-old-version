@@ -4,7 +4,6 @@ title: Kakao Geocode API, 주소로 위도 경도 java로 파싱하기
 comments: true
 categories : [Java]
 tags: [java]
-
 ---
 
 Kakao Geocode API로 부터 받은 데이터를 직렬화 하고 JSON객체로 바꾸고 특정 데이터를 얻어오는 작업을 할 것입니다.  

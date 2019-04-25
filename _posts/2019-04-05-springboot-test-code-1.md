@@ -155,53 +155,7 @@ public class CustomerController {
 그 밖에도 `param()` 등 으로 파라미터를 넘길수도 있다.  
 이렇게 Controller를 통합테스트 를 실행해 전체 플로우를 테스트 할 수 있다.  
 
-만약 테스트 하려는 post mapping을 하는 도메인의 파라미터인 DTO 에 아무런 어노테이션이 없다면
-~~~java
-    @PostMapping("")
-    public Object regCustomerData(Customer customer, 
-                                    HttpSession session, HttpServletRequest request){
-        블라블라
-    }
-~~~
-
-위와같은 메소드는 이렇게 고친다.  
-~~~java
-    @PostMapping("")
-    public Object regCustomerData(@RequestAttribute("customer") Customer customer, 
-                                    HttpSession session, HttpServletRequest request){
-        블라블라
-    }
-~~~
-
-`@RequestAttribute`는 Request에 셋팅된 Attribute 값을 가져온다.  
-테스트코드는 아래와 같이 고친다.  
-
-~~~java
-    @Test
-    public void 고객정보_등록_willReturn이_1이아니면_예외가_발생해야한다() throws Exception {
-        Customer customer = new Customer("1","sehajyang"); // Customer(custno, custname)
-
-        given(customerService.getCustomerByCustno(customer.getCustno())).willReturn(1); // getCustomerByCustno 의 result는 1을 리턴
-
-        this.mvc.perform(post("/customer")
-                    .contentType(MediaType.APPLICATION_FORM_URLENCODED)
-                    .session(session)
-                    .header("X-FORWARDED-FOR", request.getHeader("X-FORWARDED-FOR"))
-                    .requestAttr("customer", customer)
-                    )
-                .andExpect(status().isOk())
-                .andExpect(content().string("SUCCESS"))
-                .andReturn()
-                .getResponse();
-    }
-~~~
-이렇게 고치면 `@RequestBody` 를 도메인 파라미터 중 DTO에 사용하지 않고 테스트 할 수 있다.  
-기존 도메인의 실행에 있어서 오류도 나지 않는다.  
-
-만약 클라이언트에서 json 형식 혹은 Object 타입 으로 DTO를 보내주지 않는다면 도메인 파라미터의 DTO에 `@RequestBody`를 추가할 경우 십중팔구 오류가 난다.  
-`@RequestBody`는 Object객체를 deserialize 한다. 따라서 Object 객체로 Deserialize 할 수 없으면 오류가 난다.   
-그렇다고 기존의 클라이언트 쪽 코드를 전부 바꿀 순 없으므로 이럴 경우 `@RequestBody` 대신 `@RequestAttribute`로 해결 할 수 있다.  
-`@RequestAttribute` 대신 `@SessionAttributes`를 사용하는 방법도 있는데 이 경우엔 테스트 코드에서 `requestAttr()` 대신 `sessionAttr()`을 사용할 수 있다.  
+`@SessionAttributes`를 사용하는 방법도 있는데 이 경우엔 테스트 코드에서 `requestAttr()` 대신 `sessionAttr()`을 사용할 수 있다.  
 이 방법은 [이곳](https://www.petrikainulainen.net/programming/spring-framework/integration-testing-of-spring-mvc-applications-forms/)의 예제로 확인할 수 있다.  
 
 위 시리즈는 3부로 나뉘어 통합테스트, 단위테스트, spock를 사용한 테스트로 작성 될 예정입니다.  

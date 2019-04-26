@@ -65,7 +65,7 @@ public class CustomerControllerTest {
 
 `@SpyBean`은 해당 객체를 주입받아 사용하다 given을 주면 선언한 해당 기능으로 동작하는 Bean 이다.  
 
-고객정보를 조회 및 등록하는 메소드가 있는 `CustomerController` 가 있다.  
+고객정보를 조회 및 등록하는 메소드가 있는 도메인 인 `CustomerController` 가 있다.  
 아래 코드는 예시입니다.  
 ~~~java
 @Controller
@@ -155,8 +155,96 @@ public class CustomerController {
 그 밖에도 `param()` 등 으로 파라미터를 넘길수도 있다.  
 이렇게 Controller를 통합테스트 를 실행해 전체 플로우를 테스트 할 수 있다.  
 
-`@SessionAttributes`를 사용하는 방법도 있는데 이 경우엔 테스트 코드에서 `requestAttr()` 대신 `sessionAttr()`을 사용할 수 있다.  
+`@SessionAttributes`를 사용하는 방법도 있는데 이 경우엔 테스트 코드에서 `requestAttr()` 대신 `sessionAttr()`을 사용할 수 있다.    
 이 방법은 [이곳](https://www.petrikainulainen.net/programming/spring-framework/integration-testing-of-spring-mvc-applications-forms/)의 예제로 확인할 수 있다.  
+
+만약    
+~~~java
+    @PostMapping("")
+    public Object regCustomerData(Customer customer, 
+                                    HttpSession session, HttpServletRequest request){
+~~~
+이렇게 DTO에 `@RequestBody`가 없는 도메인을 테스트하려면 조금 복잡해진다.  
+나는 회사 코드의 POST 도메인 파라미터 DTO에 일부 `@RequestBody`가 없었고, `@RequestBody`를 추가 할 경우 문제가 생길 수 있었기 때문에 
+기존 코드를 변경하지 않고 테스트 하는 방법을 찾아보았다.  
+
+우선 [Spring에서는 권장하지 않는다](https://stackoverflow.com/questions/17143116/integration-testing-posting-an-entire-object-to-spring-mvc-controller/20926205) 그 이유는 아래와 같다.  
+![img_1]({{ "/assets/img/blogpost/springboot-testcode1-1.JPG"}})  
+대략 이렇게 이해할 수 있다.  
+>통합 테스트의 주 목적 중 하나는 MockMvc 모델 객체가 Object 데이터로 바뀌었는지 확인하는 것 이다.  
+NewObject(DTO)를 자동으로 변환하면 NewObject(DTO)가 실제 form과 호환되지 않는 문제가 있는데, 이러한 문제가 있는 파라미터는 테스트에서 제외되기 때문이다.  
+
+그래서 `@RequestBody`가 없는 도메인의 DTO 파라미터는 십중팔구 넘어가지 않으며 null이된다.  
+이것을 해결하기 위한 방법은 두가지 정도가 있다.  
+### HttpClient 사용
+~~~java 
+@Test
+    public void 고객정보_등록_willReturn이_1이아니면_예외가_발생해야한다() throws Exception {
+        Customer customer = new Customer("1","sehajyang"); // Customer(custno, custname)
+
+        given(customerService.getCustomerByCustno(customer.getCustno())).willReturn(1); // getCustomerByCustno 의 result는 1을 리턴
+
+        this.mvc.perform(post("/customer")
+                    .contentType(MediaType.APPLICATION_FORM_URLENCODED)
+                    .content(EntityUtils.toString(new UrlEncodedFormEntity(Arrays.asList(
+                            new BasicNameValuePair("custno", "1"),
+                            new BasicNameValuePair("custname", "sehajyang")
+                    )))));
+                    .andExpect(status().isOk())
+                    .andExpect(content().string("SUCCESS"))
+                    .andReturn()
+                    .getResponse();
+    }
+~~~
+
+### buildUrlEncodedFormEntity() 이용
+~~~java
+
+@Test
+    public void 고객정보_등록_willReturn이_1이아니면_예외가_발생해야한다() throws Exception {
+        Customer customer = new Customer("1","sehajyang"); // Customer(custno, custname)
+
+        given(customerService.getCustomerByCustno(customer.getCustno())).willReturn(1); // getCustomerByCustno 의 result는 1을 리턴
+
+        this.mvc.perform(post("/customer")
+                    .contentType(MediaType.APPLICATION_FORM_URLENCODED)
+                    .contentType(MediaType.APPLICATION_FORM_URLENCODED)
+                                .content(buildUrlEncodedFormEntity(
+                                "custno","1",
+                                "custname","sehajyang" 
+                    ))));
+                    .andExpect(status().isOk())
+                    .andExpect(content().string("SUCCESS"))
+                    .andReturn()
+                    .getResponse();
+    }
+
+private String buildUrlEncodedFormEntity(String... params) {
+    if( (params.length % 2) > 0 ) {
+       throw new IllegalArgumentException("Need to give an even number of parameters");
+    }
+    StringBuilder result = new StringBuilder();
+    for (int i=0; i<params.length; i+=2) {
+        if( i > 0 ) {
+            result.append('&');
+        }
+        try {
+            result.
+            append(URLEncoder.encode(params[i], StandardCharsets.UTF_8.name())).
+            append('=').
+            append(URLEncoder.encode(params[i+1], StandardCharsets.UTF_8.name()));
+        }
+        catch (UnsupportedEncodingException e) {
+            throw new RuntimeException(e);
+        }
+    }
+    return result.toString();
+ }
+ ~~~
+ 
+[Testing Form posts through MockMVC](https://stackoverflow.com/questions/36568518/testing-form-posts-through-mockmvc)에서 더 알아볼 수 있다. 
+
+---
 
 위 시리즈는 3부로 나뉘어 통합테스트, 단위테스트, spock를 사용한 테스트로 작성 될 예정입니다.  
 많이 미숙하지만 지속적으로 알아가고 있습니다.  

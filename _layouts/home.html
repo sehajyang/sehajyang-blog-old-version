@@ -31,7 +31,7 @@ layout: default
           </header>
           <div class="excerpt">
 <!--              {{ post.excerpt | strip_html | escape }}-->
-               {{ post.content | strip_html | truncatewords: "50","" }}
+               {{ post.content | strip_html | truncatewords: "50","..." }}
             <p>
             <a class="button" style="padding:0.1em 0.6em;" href="{{ post.url | prepend: site.baseurl }}">
               more

@@ -189,7 +189,7 @@ NewObject(DTO)를 자동으로 변환하면 NewObject(DTO)가 실제 form과 호
                     .content(EntityUtils.toString(new UrlEncodedFormEntity(Arrays.asList(
                             new BasicNameValuePair("custno", "1"),
                             new BasicNameValuePair("custname", "sehajyang")
-                    )))));
+                    )))))
                     .andExpect(status().isOk())
                     .andExpect(content().string("SUCCESS"))
                     .andReturn()
@@ -212,7 +212,7 @@ NewObject(DTO)를 자동으로 변환하면 NewObject(DTO)가 실제 form과 호
                                 .content(buildUrlEncodedFormEntity(
                                 "custno","1",
                                 "custname","sehajyang" 
-                    ))));
+                    ))))
                     .andExpect(status().isOk())
                     .andExpect(content().string("SUCCESS"))
                     .andReturn()

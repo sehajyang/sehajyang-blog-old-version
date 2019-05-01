@@ -3,35 +3,42 @@ layout: page
 title: About Me
 ---
 
-## Seha 
-**Junior Developer**  
-[about me](https://about.me/sehajyang),[Github](https://github.com/sehajyang),[StackShare](https://stackshare.io/sehajyang/my-stack)  
-넓고 얕은 지식 확장중인 주니어 개발자    
-배우거나 도전하는 것을 좋아합니다. 
-최근 좋은 코드 품질에 대한 관심이 많습니다. 
+# [About Me](https://about.me/sehajyang)
+
+## Seha
+
+**Junior Developer**
+
+안녕하세요 넓고 얕은 지식 확장중인 주니어 개발자 입니다.         
+이것저것 배우거나 도전하는 것을 좋아합니다.   
+
+최근엔 코드품질에 대한 고민을 많이 하고있습니다.  
+욕심내되 꾸준히 하자는 모토를 갖고있습니다 :D  
+
+[기술스택은 이쪽:point_left:](https://stackshare.io/sehajyang/my-stack)
+[GitHub](https://github.com/sehajyang)
 
 ## Skill Set
 
-Java / Python    
-JavaScript / Node.js / React.js  
-Spring / Springboot  
+**Java** / **Python** / Shell  
+JavaScript / Node.js   
+Spring / **Springboot** 
 AWS  
-Jenkins  
-Linux   
-MySQL / Oracle / MongoDB  
-Intelli J / Eclipse / Atom / VS Code / Vim  
+Linux    
+**MySQL** / Oracle / MongoDB / Redis  
+Intelli J / PyCharm / VS Code / Web Storm / Vim  
 
 ## Learning
 
-Kotlin / TDD
+Kotlin / **TDD(BDD)**
 
 ## Interesting
 
-DevOps / Serverless
+Clean Code
 
 ## Work Experience
 
-2018.11 ~ Now / Herren's Backend Developer
+**2018.11 ~ Now / Herren's Backend Developer**
 
 ## Activities
 
@@ -56,6 +63,11 @@ DevOps / Serverless
 * 181006 [Dev Django Korea 2018](https://festa.io/events/86)
 
 * 190223 [KCD(Korea Community Day) 2019](https://kcd2019.festa.io/)
+
+* 190316 [프론트엔드와 무관합니다만,](https://festa.io/events/212)
+
+* 190427 [Spring camp 2019](https://www.springcamp.io/2019)
+
 
 ## Contact
 

@@ -135,7 +135,7 @@ public class CustomerController {
     }
 
     @Test
-    public void 고객정보_등록_willReturn이_1이아니면_예외가_발생해야한다() throws Exception {
+    public void 고객정보_등록이_예외없이_되어야한다() throws Exception {
         Customer customer = new Customer("1","sehajyang"); // Customer(custno, custname)
 
         given(customerService.getCustomerByCustno(customer.getCustno())).willReturn(1); // getCustomerByCustno 의 result는 1을 리턴
@@ -179,7 +179,7 @@ NewObject(DTO)를 자동으로 변환하면 NewObject(DTO)가 실제 form과 호
 ### HttpClient 사용
 ~~~java 
 @Test
-    public void 고객정보_등록_willReturn이_1이아니면_예외가_발생해야한다() throws Exception {
+    public void 고객정보_등록이_예외없이_되어야한다() throws Exception {
         Customer customer = new Customer("1","sehajyang"); // Customer(custno, custname)
 
         given(customerService.getCustomerByCustno(customer.getCustno())).willReturn(1); // getCustomerByCustno 의 result는 1을 리턴
@@ -201,7 +201,7 @@ NewObject(DTO)를 자동으로 변환하면 NewObject(DTO)가 실제 form과 호
 ~~~java
 
 @Test
-    public void 고객정보_등록_willReturn이_1이아니면_예외가_발생해야한다() throws Exception {
+    public void 고객정보_등록이_예외없이_되어야한다() throws Exception {
         Customer customer = new Customer("1","sehajyang"); // Customer(custno, custname)
 
         given(customerService.getCustomerByCustno(customer.getCustno())).willReturn(1); // getCustomerByCustno 의 result는 1을 리턴

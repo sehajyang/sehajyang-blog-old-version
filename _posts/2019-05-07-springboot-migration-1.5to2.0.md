@@ -1,6 +1,9 @@
 ---
 layout: post
 title: springboot 1.5 에서 2 로 버전 업그레이드
+categories : [Java]
+comments: true
+tags: [Springboot]
 ---
 [공식 가이드](https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-2.0-Migration-Guide)는 이쪽이지만
 이렇게 했을때 왠지 잘 안됐었기 때문에 작성하게 되었습니다.  

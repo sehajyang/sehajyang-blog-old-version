@@ -3,7 +3,7 @@ layout: post
 title: spring camp 2019 참석 후기 (1부)
 categories : [Seminar]
 comments: true
-tags: [Seminar, Spring]
+tags: [Seminar, Spring, Springboot]
 ---
 spring camp 2019를 다녀왔다!  
 티켓팅이 정말 어려웠기 때문에, 지인이나 회사의 다른 개발자분이 티켓팅에 실패해서 혼자 다녀왔다.  

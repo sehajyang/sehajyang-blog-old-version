@@ -62,9 +62,9 @@ spring.main.allow-bean-definition-overriding=true
 The server time zone value ‘KST’ is unrecognized or represents more than one time zone :   
 mysql-connector-java
 ```
-위의 오류가 발생하면 아래와 같이 DB url의 DB명 뒤에 `?characterEncoding=UTF-8&serverTimezone=UTC` 를 추가합니다
+위의 오류가 발생하면 아래와 같이 DB url의 DB명 뒤에 `?characterEncoding=UTF-8&serverTimezone=Asia/Seoul` 를 추가합니다
 ```
-jdbc:mysql://아이피:포트/DB명?characterEncoding=UTF-8&serverTimezone=UTC
+jdbc:mysql://아이피:포트/DB명?characterEncoding=UTF-8&serverTimezone=Asia/Seoul
 ```
 
 ### 7. 버전 업그레이드 2.0 -> 2.1

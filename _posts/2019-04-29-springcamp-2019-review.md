@@ -102,6 +102,4 @@ spock는 정말 좋다. 처음엔 groovy가 낯설었지만 조금 적응이 되
 `Kotlin + Spring Data JPA` 세션을 듣고싶었는데, 중간에 일이 생겨 아쉽게 마지막 세션을 들을 수 없었다.  
 이전에 kotlin 프로젝트에 자바 라이브러리를 사용하려다 대차게 실패한 적이 있기 때문에 꼭 듣고 싶었다.  
 해당글 : [Kotlin 에서 Lombok을 사용할 수 없는 문제](https://sehajyang.github.io/etc/2019/03/07/kotlin-and-lombok.html)     
-강연 영상이나 ppt가 공개되면 볼 예정이다.
-
-2부에 계속!
+강연 영상이나 ppt가 공개되면 봐야겠다.
